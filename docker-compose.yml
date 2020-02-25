@@ -1,0 +1,12 @@
+version: '3'
+services:
+  sipcmd:
+      # build: .
+      image: sipcmd_sipcmd
+      # network_mode: host
+      volumes:
+        - ./external:/external
+      extra_hosts:
+        - "happy.anttel-pro.ab-kz-02.antbuddy.com:125.212.212.40"
+        - "xxx3.antbuddy.com:125.212.212.45"
+        - "xxx4.antbuddy.com:125.212.212.45"

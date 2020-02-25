@@ -1,0 +1,21 @@
+#!/bin/bash
+
+number=$1
+# Prevent duplicated port\
+#count=`ps aux | grep "/bin/bash ./call" | grep -v "grep "| wc -l`
+#MYPORT=$((count+5060))
+sleep 10 &
+MYPORT="$!"
+echo "[Info] Listening Port: $MYPORT" >&2
+echo "" > ./call.log
+CALLREALM=${CALLREALM:-"happy.anttel-pro.ab-kz-02.antbuddy.com"}
+CALLUSER=${CALLUSER:-"kyhuynhhp"}
+CALLPW=${CALLPW:-"Ant@3332858"}
+CALLPROXY=${CALLPROXY:-"125.212.212.40"}
+yes i | /sipcmd/sipcmd -p $MYPORT -P sip -u ${CALLUSER}@${CALLREALM} -c $CALLPW -w ${CALLPROXY} -f ./audio.wav -x "c${number}@${CALLREALM};w250;vaudio.mp3;ws45000;h;j1" -o ./call.log
+# vaudio.mp3;ws45000;
+# c${number}@${CALLREALM};w250;vaudio.mp3;ws45000;h;j1
+#
+# c${number}@happy.anttel-pro.ab-kz-02.antbuddy.com;w250;vaudio.mp3;ws45000;h;j1
+# vaudio.wav;
+# ws45000;

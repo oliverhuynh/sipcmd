@@ -1,0 +1,1205 @@
+  0:00.043	                 sipcmd		Version 1.0.1 by Command line VoIP testphone on Unix Linux (5.0.0-31-generic-x86_64) with PTLib (v2.10.10 (svn:29149)) at 2019/10/22 7:59:13.542
+  0:00.043	                 sipcmd	OpalMan	Attached endpoint with prefix sip
+  0:00.043	                 sipcmd	OpalEP	Created endpoint: sip
+  0:00.043	                 sipcmd	PTLib	Created read/write mutex 0x149b0a8
+  0:00.043	                 sipcmd	PWLib	File handle high water mark set: 9 PUDPSocket
+  0:00.043	                 sipcmd	IfaceMon	Initial interface list:
+127.0.0.1 <00-00-00-00-00-00> (lo)
+172.20.0.2 <02-42-AC-14-00-02> (eth0)
+
+  0:00.043	                 sipcmd	PTLIB	Opened NetLink socket
+  0:00.043	                 sipcmd	PWLib	File handle high water mark set: 15 Thread unblock pipe
+  0:00.043	                 sipcmd	PTLib	Created thread 0x149b6c0 
+  0:00.043	                 sipcmd	PTLib	Thread high water mark set: 3
+  0:00.043	                 sipcmd	PTLib	Created read/write mutex 0x149b328
+  0:00.043	                 sipcmd	PWLib	File handle high water mark set: 17 Thread unblock pipe
+  0:00.043	                 sipcmd	PTLib	Created thread 0x149bb00 Housekeeper
+  0:00.043	Network In...ae21819700	PTLib	Started thread 0x149b6c0 (77) Network Interface Monitor:0x7fae21819700
+  0:00.043	Network In...ae21819700	IfaceMon	Started interface monitor thread.
+  0:00.043	                 sipcmd	PTLib	Thread high water mark set: 4
+  0:00.043	Housekeepe...ae217d8700	PTLib	Started thread 0x149bb00 (78) Housekeeper:0x7fae217d8700
+  0:00.043	                 sipcmd	OpalMan	Attached endpoint with prefix sips
+  0:00.043	                 sipcmd	SIP	Created endpoint.
+  0:00.044	                 sipcmd	OpalMan	Added route "local:.*=sip:<da>"
+  0:00.044	                 sipcmd	OpalMan	Added route "sip:.*=local:<db>"
+  0:00.044	                 sipcmd	PTLib	Created read/write mutex 0x14a1cb0
+  0:00.044	                 sipcmd	PWLib	File handle high water mark set: 18 PUDPSocket
+  0:00.044	                 sipcmd	MonSock	Created socket bundle for all interfaces.
+  0:00.044	                 sipcmd	PWLib	File handle high water mark set: 19 PUDPSocket
+  0:00.044	                 sipcmd	MonSock	Created bundled UDP socket 172.20.0.2:5060
+  0:00.044	                 sipcmd	PWLib	File handle high water mark set: 21 Thread unblock pipe
+  0:00.044	                 sipcmd	PTLib	Created thread 0x14a0b90 Opal Listener
+  0:00.044	                 sipcmd	PTLib	Thread high water mark set: 5
+  0:00.044	                 sipcmd	PWLib	Assertion fail: Function pthread_setschedparam failed, file ptlib/unix/tlibthrd.cxx, line 745, Error=1
+  0:00.044	Opal Liste...ae21797700	PTLib	Started thread 0x14a0b90 (79) Opal Listener:0x7fae21797700
+  0:00.044	                 sipcmd	SIP	Start REGISTER
+          aor=agent01@xxx3.antbuddy.com
+       remote=125.212.212.45
+        local=
+      contact=
+        proxy=
+       authID=
+        realm=
+       expire=0
+      restore=30
+     minRetry=default
+     maxRetry=default
+compatibility=FullyCompliant
+  0:00.044	Opal Liste...ae21797700	Listen	Started listening thread on udp$*:5060
+  0:00.044	                 sipcmd	SIP	Normalised REGISTER
+          aor=sip:agent01@xxx3.antbuddy.com
+       remote=sip:agent01@xxx3.antbuddy.com;OPAL-proxy=125.212.212.45
+        local=
+      contact=
+        proxy=125.212.212.45
+       authID=agent01
+        realm=
+       expire=3600
+      restore=30
+     minRetry=default
+     maxRetry=default
+compatibility=FullyCompliant
+  0:00.044	                 sipcmd	PTLib	Created read/write mutex 0x14a2850
+  0:00.045	                 sipcmd	PWLib	File handle high water mark set: 22 PUDPSocket
+  0:00.045	                 sipcmd	SIP	Constructed REGISTER handler for sip:agent01@xxx3.antbuddy.com
+  0:00.045	                 sipcmd	SIP	Executing state change to Subscribing for REGISTER handler, target=sip:agent01@xxx3.antbuddy.com, id=6cb99281-0ff3-e911-9335-0242ac140002@61c71e006a9b
+  0:00.045	                 sipcmd	SIP	Changing REGISTER handler from Unavailable to Subscribing, target=sip:agent01@xxx3.antbuddy.com, id=6cb99281-0ff3-e911-9335-0242ac140002@61c71e006a9b
+  0:00.045	                 sipcmd	PTLib	Created read/write mutex 0x14a4750
+  0:00.045	                 sipcmd	OpalUDP	Binding to interface: 0.0.0.0:5060
+  0:00.045	                 sipcmd	SIP	Created transport udp$125.212.212.45:5060<if=udp$*:5060>
+  0:00.045	                 sipcmd	OpalUDP	Started connect to 125.212.212.45:5060
+  0:00.045	                 sipcmd	OpalUDP	Writing to interface 0 - "172.20.0.2%eth0"
+  0:00.046	                 sipcmd	OpalMan	Listener interfaces: associated transport=udp$172.20.0.2:5060
+    udp$172.20.0.2:5060
+  0:00.046	                 sipcmd	PTLib	Created read/write mutex 0x14a6f50
+  0:00.046	                 sipcmd	SIP	Transaction created.
+  0:00.047	                 sipcmd	SIP	Transaction remembering interface "172.20.0.2%eth0"
+  0:00.047	                 sipcmd	SIP	No SRV lookup as has explicit port number.
+  0:00.047	                 sipcmd	SIP	Transaction remote address is udp$125.212.212.45:5060
+  0:00.047	                 sipcmd	SIP	Sending PDU (615 bytes) to: rem=udp$125.212.212.45:5060,local=udp$172.20.0.2:5060,if=172.20.0.2%eth0
+REGISTER sip:xxx3.antbuddy.com SIP/2.0
+Route: <sip:125.212.212.45:5060;lr>
+CSeq: 1 REGISTER
+Via: SIP/2.0/UDP 172.20.0.2:5060;branch=z9hG4bK6cff9281-0ff3-e911-9335-0242ac140002;rport
+User-Agent: sipcmd/1.0.1
+From: <sip:agent01@xxx3.antbuddy.com>;tag=7cc29281-0ff3-e911-9335-0242ac140002
+Call-ID: 6cb99281-0ff3-e911-9335-0242ac140002@61c71e006a9b
+Organization: Command line VoIP testphone
+To: <sip:agent01@xxx3.antbuddy.com>
+Contact: <sip:agent01@172.20.0.2:5060>;q=1
+Allow: INVITE,ACK,OPTIONS,BYE,CANCEL,SUBSCRIBE,NOTIFY,REFER,MESSAGE,INFO,PING,PRACK
+Expires: 3600
+Content-Length: 0
+Max-Forwards: 70
+
+
+  0:00.048	                 sipcmd	OpalUDP	Setting interface to 172.20.0.2%eth0
+  0:00.048	                 sipcmd	SIP	Transaction timers set: retry=10.000, completion=16.000
+  0:00.048	                 sipcmd	OpalMan	Attached endpoint with prefix local
+  0:00.048	                 sipcmd	OpalEP	Created endpoint: local
+  0:00.048	                 sipcmd	LocalEP	Created endpoint.
+  0:00.048	                 sipcmd	OpalMan	Set up call from local:* to 8000@xxx3.antbuddy.com
+  0:00.048	                 sipcmd	PTLib	Created read/write mutex 0x14aa0a0
+  0:00.048	                 sipcmd	Call	Created Call[Cf3f8d7a11]
+  0:00.048	                 sipcmd	OpalMan	Set up connection to "local:*"
+  0:00.048	                 sipcmd	PTLib	Created read/write mutex 0x14aa4c0
+  0:00.048	                 sipcmd	OpalCon	Created connection Call[Cf3f8d7a11]-EP<local>[L5a5f0c3a2]
+  0:00.048	                 sipcmd	LocalCon	Created connection with token "L5a5f0c3a2"
+  0:00.048	                 sipcmd	Call	GetOtherPartyConnection Call[Cf3f8d7a11]-EP<local>[L5a5f0c3a2]
+  0:00.048	                 sipcmd	OpalCon	SetPhase from UninitialisedPhase to SetUpPhase for Call[Cf3f8d7a11]-EP<local>[L5a5f0c3a2]
+  0:00.048	                 sipcmd	OpalMan	OnIncoming connection Call[Cf3f8d7a11]-EP<local>[L5a5f0c3a2]
+  0:00.048	                 sipcmd	Call	GetOtherPartyConnection Call[Cf3f8d7a11]-EP<local>[L5a5f0c3a2]
+  0:00.048	                 sipcmd	Call	GetOtherPartyConnection Call[Cf3f8d7a11]-EP<local>[L5a5f0c3a2]
+  0:00.048	                 sipcmd	OpalMan	Searching for route "local:root	8000@xxx3.antbuddy.com"
+  0:00.048	                 sipcmd	OpalMan	Matched regex "^local:.*	.*$" ("local:.*")
+  0:00.048	                 sipcmd	OpalMan	Set up connection to "sip:8000@xxx3.antbuddy.com"
+  0:00.048	                 sipcmd	PTLib	Created read/write mutex 0x14b0430
+  0:00.048	                 sipcmd	OpalCon	Created connection Call[Cf3f8d7a11]-EP<sip>[70509381-0ff3-e911-9335-0242ac140002]
+  0:00.048	                 sipcmd	RFC2833	Handler created
+  0:00.049	                 sipcmd	RFC2833	Handler created
+  0:00.049	                 sipcmd	SIP	Outbound proxy for dialog set to sip:125.212.212.45
+  0:00.049	                 sipcmd	SIP	Created connection.
+  0:00.049	                 sipcmd	LocalCon	Outgoing call routed to sip:8000@xxx3.antbuddy.com for Call[Cf3f8d7a11]-EP<local>[L5a5f0c3a2]
+  0:00.049	                 sipcmd	Call	OnSetUp Call[Cf3f8d7a11]-EP<local>[L5a5f0c3a2]
+  0:00.049	                 sipcmd	SIP	SetUpConnection: sip:8000@xxx3.antbuddy.com
+  0:00.049	                 sipcmd	SIP	Setting new transport for destination "sip:125.212.212.45"
+  0:00.049	                 sipcmd	PTLib	Created read/write mutex 0x14b4a90
+  0:00.049	                 sipcmd	OpalUDP	Binding to interface: 0.0.0.0:5060
+  0:00.049	                 sipcmd	SIP	Created transport udp$125.212.212.45:5060<if=udp$*:5060>
+  0:00.049	                 sipcmd	OpalUDP	Started connect to 125.212.212.45:5060
+  0:00.057	Opal Liste...ae21797700	PTLib	Created read/write mutex 0x7fadf0003bc0
+  0:00.057	Opal Liste...ae21797700	OpalUDP	Binding to interface: 172.20.0.2:5060
+  0:00.057	Opal Liste...ae21797700	PTLib	Created read/write mutex 0x7fadf0006c50
+  0:00.057	Opal Liste...ae21797700	SIP	Waiting for PDU on udp$125.212.212.45:5060<if=udp$172.20.0.2:5060>
+  0:00.058	Opal Liste...ae21797700	SIP	PDU received: rem=udp$125.212.212.45:5060,local=udp$172.20.0.2:5060,if=172.20.0.2%eth0
+SIP/2.0 401 Unauthorized
+CSeq: 1 REGISTER
+Via: SIP/2.0/UDP 172.20.0.2:5060;branch=z9hG4bK6cff9281-0ff3-e911-9335-0242ac140002;rport=11981;received=113.161.67.92
+From: <sip:agent01@xxx3.antbuddy.com>;tag=7cc29281-0ff3-e911-9335-0242ac140002
+Call-ID: 6cb99281-0ff3-e911-9335-0242ac140002@61c71e006a9b
+To: <sip:agent01@xxx3.antbuddy.com>;tag=1700698b7171530b389f27beb360ed9b.213e
+Content-Length: 0
+WWW-Authenticate: Digest realm="xxx3.antbuddy.com", nonce="Xa63/V2uttGowQbJHpqpJ/e62OmrVZYH"
+
+
+  0:00.058	Opal Liste...ae21797700	SIP	Queueing PDU "1 REGISTER <401>", transaction=z9hG4bK6cff9281-0ff3-e911-9335-0242ac140002, token=6cb99281-0ff3-e911-9335-0242ac140002@61c71e006a9b
+  0:00.058	Opal Liste...ae21797700	PWLib	File handle high water mark set: 23 Thread unblock pipe
+  0:00.058	Opal Liste...ae21797700	PTLib	Created thread 0x7fadf0004610 Pool
+  0:00.058	Opal Liste...ae21797700	PTLib	Thread high water mark set: 6
+  0:00.058	Opal Liste...ae21797700	Opal	Transport clean up on termination
+  0:00.058	Opal Liste...ae21797700	Opal	Transport Close
+  0:00.058	Opal Liste...ae21797700	PWLib	File handle high water mark set: 24 PUDPSocket
+  0:00.058	    Pool:0x7fae21756700	PTLib	Started thread 0x7fadf0004610 (80) Pool:0x7fae21756700
+  0:00.058	    Pool:0x7fae21756700	SIP	Handling PDU "1 REGISTER <401>" for transaction=z9hG4bK6cff9281-0ff3-e911-9335-0242ac140002
+  0:00.058	Opal Liste...ae21797700	Opal	Deleted transport udp$125.212.212.45:5060<if=udp$172.20.0.2:5060>
+  0:00.058	    Pool:0x7fae21756700	SIP	REGISTER transaction id=z9hG4bK6cff9281-0ff3-e911-9335-0242ac140002 completing.
+  0:00.058	Opal Liste...ae21797700	PTLib	Destroying read/write mutex 0x7fadf0003bc0
+  0:00.059	    Pool:0x7fae21756700	SIP	Finalising handlers interface "172.20.0.2%eth0"
+  0:00.059	    Pool:0x7fae21756700	OpalUDP	Setting interface to 172.20.0.2%eth0
+  0:00.059	    Pool:0x7fae21756700	SIP	Received Authentication Required response for z9hG4bK6cff9281-0ff3-e911-9335-0242ac140002
+  0:00.059	    Pool:0x7fae21756700	SIP	Creating authentication credentials of user "agent01" for realm "xxx3.antbuddy.com"
+  0:00.059	    Pool:0x7fae21756700	SIP	Auth realm set to xxx3.antbuddy.com
+  0:00.059	    Pool:0x7fae21756700	OpalMan	Listener interfaces: associated transport=udp$172.20.0.2:5060
+    udp$172.20.0.2:5060
+  0:00.060	    Pool:0x7fae21756700	PTLib	Created read/write mutex 0x7fadf4006110
+  0:00.060	    Pool:0x7fae21756700	SIP	Transaction created.
+  0:00.060	    Pool:0x7fae21756700	HTTP	Adding authentication information
+  0:00.060	    Pool:0x7fae21756700	SIP	Transaction remembering interface "172.20.0.2%eth0"
+  0:00.060	    Pool:0x7fae21756700	SIP	No SRV lookup as has explicit port number.
+  0:00.060	    Pool:0x7fae21756700	SIP	Transaction remote address is udp$125.212.212.45:5060
+  0:00.061	    Pool:0x7fae21756700	SIP	Sending PDU (815 bytes) to: rem=udp$125.212.212.45:5060,local=udp$172.20.0.2:5060,if=172.20.0.2%eth0
+REGISTER sip:xxx3.antbuddy.com SIP/2.0
+Route: <sip:125.212.212.45:5060;lr>
+CSeq: 2 REGISTER
+Via: SIP/2.0/UDP 172.20.0.2:5060;branch=z9hG4bK680b9581-0ff3-e911-9335-0242ac140002;rport
+User-Agent: sipcmd/1.0.1
+Authorization: Digest username="agent01", realm="xxx3.antbuddy.com", nonce="Xa63/V2uttGowQbJHpqpJ/e62OmrVZYH", uri="sip:xxx3.antbuddy.com", algorithm=MD5, response="b907e93770279f77f137eb91ede94dfb"
+From: <sip:agent01@xxx3.antbuddy.com>;tag=7cc29281-0ff3-e911-9335-0242ac140002
+Call-ID: 6cb99281-0ff3-e911-9335-0242ac140002@61c71e006a9b
+Organization: Command line VoIP testphone
+To: <sip:agent01@xxx3.antbuddy.com>
+Contact: <sip:agent01@172.20.0.2:5060>;q=1
+Allow: INVITE,ACK,OPTIONS,BYE,CANCEL,SUBSCRIBE,NOTIFY,REFER,MESSAGE,INFO,PING,PRACK
+Expires: 3600
+Content-Length: 0
+Max-Forwards: 70
+
+
+  0:00.061	    Pool:0x7fae21756700	OpalUDP	Setting interface to 172.20.0.2%eth0
+  0:00.061	    Pool:0x7fae21756700	SIP	Transaction timers set: retry=10.000, completion=16.000
+  0:00.061	    Pool:0x7fae21756700	SIP	REGISTER transaction id=z9hG4bK6cff9281-0ff3-e911-9335-0242ac140002 completed.
+  0:00.061	    Pool:0x7fae21756700	SIP	Handled PDU "1 REGISTER <401>"
+  0:00.061	    Pool:0x7fae21756700	PTLib	Destroying read/write mutex 0x7fadf0006c50
+  0:00.062	                 sipcmd	MediaFormat	Removing codecs !*
+  0:00.062	                 sipcmd	Call	GetMediaFormats for Call[Cf3f8d7a11]-EP<sip>[70509381-0ff3-e911-9335-0242ac140002]
+    G.722-64k,G.722.1-24k,G.722.1-32k,G.722.2,SILK-16,SpeexIETFWide-20.6k,SpeexWB,SpeexWide-20.6k,G.711-ALaw-64k,G.711-uLaw-64k,G.726-16k,G.726-24k,G.726-32k,G.726-40k,GSM-06.10,GSM-AMR,LPC-10,MS-GSM,MS-IMA-ADPCM,SILK-8,SpeexIETFNarrow-11k,SpeexIETFNarrow-15k,SpeexIETFNarrow-18.2k,SpeexIETFNarrow-24.6k,SpeexIETFNarrow-5.95k,SpeexIETFNarrow-8k,SpeexNB,SpeexWNarrow-8k,T.38,iLBC,iLBC-13k3,iLBC-15k2,UserInput/RFC2833,NamedSignalEvent,H.261,H.263,H.263plus,H.264,H.264-0,H.264-1,MPEG4,RFC4175_YCbCr-4:2:0,theora,MSRP,SIP-IM,T.140,H.224/H323AnnexQ
+  0:00.062	                 sipcmd	SIP	Local media formats set:
+    G.722-64k,G.722.1-24k,G.722.1-32k,G.722.2,SILK-16,SpeexIETFWide-20.6k,SpeexWB,SpeexWide-20.6k,G.711-ALaw-64k,G.711-uLaw-64k,G.726-16k,G.726-24k,G.726-32k,G.726-40k,GSM-06.10,GSM-AMR,LPC-10,MS-GSM,MS-IMA-ADPCM,SILK-8,SpeexIETFNarrow-11k,SpeexIETFNarrow-15k,SpeexIETFNarrow-18.2k,SpeexIETFNarrow-24.6k,SpeexIETFNarrow-5.95k,SpeexIETFNarrow-8k,SpeexNB,SpeexWNarrow-8k,T.38,iLBC,iLBC-13k3,iLBC-15k2,UserInput/RFC2833,NamedSignalEvent,H.261,H.263,H.263plus,H.264,H.264-0,H.264-1,MPEG4,RFC4175_YCbCr-4:2:0,theora,MSRP,SIP-IM,T.140,H.224/H323AnnexQ
+  0:00.062	                 sipcmd	SIP	Remote media formats set:
+    G.722-64k,G.722.1-24k,G.722.1-32k,G.722.2,SILK-16,SpeexIETFWide-20.6k,SpeexWB,SpeexWide-20.6k,G.711-ALaw-64k,G.711-uLaw-64k,G.726-16k,G.726-24k,G.726-32k,G.726-40k,GSM-06.10,GSM-AMR,LPC-10,MS-GSM,MS-IMA-ADPCM,SILK-8,SpeexIETFNarrow-11k,SpeexIETFNarrow-15k,SpeexIETFNarrow-18.2k,SpeexIETFNarrow-24.6k,SpeexIETFNarrow-5.95k,SpeexIETFNarrow-8k,SpeexNB,SpeexWNarrow-8k,T.38,iLBC,iLBC-13k3,iLBC-15k2,UserInput/RFC2833,NamedSignalEvent,H.261,H.263,H.263plus,H.264,H.264-0,H.264-1,MPEG4,RFC4175_YCbCr-4:2:0,theora,MSRP,SIP-IM,T.140,H.224/H323AnnexQ
+  0:00.062	                 sipcmd	OpalUDP	Writing to interface 0 - "172.20.0.2%eth0"
+  0:00.062	                 sipcmd	SIP	Getting local URI from registeration: sip:agent01@xxx3.antbuddy.com
+  0:00.062	                 sipcmd	SIP	Updating dialog tag from "" to "70509381-0ff3-e911-9335-0242ac140002"
+  0:00.063	                 sipcmd	PTLib	Created read/write mutex 0x14c12a0
+  0:00.063	                 sipcmd	SIP	Remote dialog address proxied: udp$125.212.212.45:5060
+  0:00.063	                 sipcmd	SIP	INVITE transaction id=z9hG4bKaa829581-0ff3-e911-9335-0242ac140002 created.
+  0:00.063	                 sipcmd	SIP	Creating INVITE request
+  0:00.063	                 sipcmd	SIP	Offering all configured media:
+    G.722-64k,G.722.1-24k,G.722.1-32k,G.722.2,SILK-16,SpeexIETFWide-20.6k,SpeexWB,SpeexWide-20.6k,G.711-ALaw-64k,G.711-uLaw-64k,G.726-16k,G.726-24k,G.726-32k,G.726-40k,GSM-06.10,GSM-AMR,LPC-10,MS-GSM,MS-IMA-ADPCM,SILK-8,SpeexIETFNarrow-11k,SpeexIETFNarrow-15k,SpeexIETFNarrow-18.2k,SpeexIETFNarrow-24.6k,SpeexIETFNarrow-5.95k,SpeexIETFNarrow-8k,SpeexNB,SpeexWNarrow-8k,T.38,iLBC,iLBC-13k3,iLBC-15k2,UserInput/RFC2833,NamedSignalEvent,H.261,H.263,H.263plus,H.264,H.264-0,H.264-1,MPEG4,RFC4175_YCbCr-4:2:0,theora,MSRP,SIP-IM,T.140,H.224/H323AnnexQ
+  0:00.064	                 sipcmd	SIP	Offering media type audio in SDP
+  0:00.064	                 sipcmd	Call	IsMediaBypassPossible Call[Cf3f8d7a11]-EP<sip>[70509381-0ff3-e911-9335-0242ac140002] session 1
+  0:00.064	                 sipcmd	OpalMan	IsMediaBypassPossible: session 1
+  0:00.064	                 sipcmd	OpalCon	IsMediaBypassPossible: default returns false
+  0:00.064	                 sipcmd	RTP	Cannot find media session 1
+  0:00.064	                 sipcmd	RTP	Cannot find RTP session 1
+  0:00.064	                 sipcmd	PTLib	Created PXConfig 0x14bffa0
+  0:00.064	                 sipcmd	RTP_UDP	Session 1, created with NAT flag set to 0
+  0:00.064	                 sipcmd	PWLib	File handle high water mark set: 25 PUDPSocket
+  0:00.064	                 sipcmd	RTP_UDP	Session 1 created: 172.20.0.2:5000-5001 ssrc=2135136925
+  0:00.064	                 sipcmd	PWLib	File handle high water mark set: 26 PUDPSocket
+  0:00.064	                 sipcmd	RTP	Creating new session RTP_UDP
+  0:00.064	                 sipcmd	RTPEp	Session 1, remembering local RTP port 5000 on connection Call[Cf3f8d7a11]-EP<sip>[70509381-0ff3-e911-9335-0242ac140002]
+  0:00.064	                 sipcmd	RTP	Found existing media session 1
+  0:00.064	                 sipcmd	MediaFormat	Validation of merge for media option "BitRate" failed.
+  0:00.064	                 sipcmd	SDP	SDP not including SpeexIETFWide-20.6k as it is not a SIP transportable format
+  0:00.064	                 sipcmd	SDP	SDP not including SpeexWide-20.6k as it is not a SIP transportable format
+  0:00.065	                 sipcmd	SDP	SDP not including MS-GSM as it is not a SIP transportable format
+  0:00.065	                 sipcmd	SDP	SDP not including MS-IMA-ADPCM as it is not a SIP transportable format
+  0:00.065	                 sipcmd	SDP	SDP not including SpeexIETFNarrow-11k as it is not a SIP transportable format
+  0:00.065	                 sipcmd	SDP	SDP not including SpeexIETFNarrow-15k as it is not a SIP transportable format
+  0:00.065	                 sipcmd	SDP	SDP not including SpeexIETFNarrow-18.2k as it is not a SIP transportable format
+  0:00.065	                 sipcmd	SDP	SDP not including SpeexIETFNarrow-24.6k as it is not a SIP transportable format
+  0:00.065	                 sipcmd	SDP	SDP not including SpeexIETFNarrow-5.95k as it is not a SIP transportable format
+  0:00.065	                 sipcmd	SDP	SDP not including SpeexIETFNarrow-8k as it is not a SIP transportable format
+  0:00.065	                 sipcmd	SDP	SDP not including SpeexWNarrow-8k as it is not a SIP transportable format
+  0:00.065	                 sipcmd	SDP	SDP not including iLBC-13k3 as it is not a SIP transportable format
+  0:00.065	                 sipcmd	SDP	SDP not including iLBC-15k2 as it is not a SIP transportable format
+  0:00.065	                 sipcmd	MediaFormat	Merging UserInput/RFC2833 into UserInput/RFC2833
+  0:00.065	                 sipcmd	RFC2833	Set tx pt=[pt=101], events="0-16,32,36" for UserInput/RFC2833
+  0:00.065	                 sipcmd	RFC2833	Set rx pt=[pt=101], events="0-16,32,36" for UserInput/RFC2833
+  0:00.065	                 sipcmd	MediaFormat	Merging NamedSignalEvent into NamedSignalEvent
+  0:00.065	                 sipcmd	RFC2833	Set tx pt=[pt=100], events="192-193" for NamedSignalEvent
+  0:00.065	                 sipcmd	RFC2833	Set rx pt=[pt=100], events="192-193" for NamedSignalEvent
+  0:00.065	                 sipcmd	SIP	Offering media type video in SDP
+  0:00.065	                 sipcmd	Call	IsMediaBypassPossible Call[Cf3f8d7a11]-EP<sip>[70509381-0ff3-e911-9335-0242ac140002] session 2
+  0:00.065	                 sipcmd	OpalMan	IsMediaBypassPossible: session 2
+  0:00.065	                 sipcmd	OpalCon	IsMediaBypassPossible: default returns false
+  0:00.065	                 sipcmd	RTP	Cannot find media session 2
+  0:00.065	                 sipcmd	RTP	Cannot find RTP session 2
+  0:00.065	                 sipcmd	RTP_UDP	Session 2, created with NAT flag set to 0
+  0:00.065	                 sipcmd	PWLib	File handle high water mark set: 27 PUDPSocket
+  0:00.065	                 sipcmd	RTP_UDP	SetOption(26,8,1048576) failed, even though it said it succeeded!
+  0:00.065	                 sipcmd	RTP_UDP	SetOption(26,8,524288) failed, even though it said it succeeded!
+  0:00.066	                 sipcmd	RTP_UDP	SetOption(26,8,262144) succeeded.
+  0:00.066	                 sipcmd	RTP_UDP	Session 2 created: 172.20.0.2:5002-5003 ssrc=902682509
+  0:00.066	                 sipcmd	PWLib	File handle high water mark set: 28 PUDPSocket
+  0:00.066	                 sipcmd	RTP	Creating new session RTP_UDP
+  0:00.066	                 sipcmd	RTPEp	Session 2, remembering local RTP port 5002 on connection Call[Cf3f8d7a11]-EP<sip>[70509381-0ff3-e911-9335-0242ac140002]
+  0:00.066	                 sipcmd	RTP	Found existing media session 2
+  0:00.066	                 sipcmd	SDP	SDP not including H.264 as it is not a SIP transportable format
+  0:00.066	                 sipcmd	MediaFormat	Validation of merge for media option "Packetization Mode" failed.
+  0:00.066	                 sipcmd	SIP	Transaction remembering interface "172.20.0.2%eth0"
+  0:00.066	                 sipcmd	SIP	Transaction remote address is udp$125.212.212.45:5060
+  0:00.066	                 sipcmd	OpalPlugin	to_customised_options:
+          Format Name       = SILK-16
+           Media Type       = audio
+         Payload Type       = [pt=107]
+        Encoding Name       = SILK
+             Channels (R/W) = 1          UnsignedInt
+           Clock Rate (R/O) = 16000      UnsignedInt
+           Complexity (R/O) = 1          UnsignedInt
+           Frame Time (R/O) = 320        UnsignedInt
+         Max Bit Rate (R/O) = 30000      UnsignedInt
+       Max Frame Size (R/O) = 75         UnsignedInt
+Max Frames Per Packet (R/O) = 5          UnsignedInt
+         Needs Jitter (R/O) = 1          Boolean
+             Protocol (R/O) = SIP        String
+ Rx Frames Per Packet (R/W) = 5          UnsignedInt
+ Tx Frames Per Packet (R/W) = 2          UnsignedInt
+              Use DTX (R/O) = 0           FMTP name: usedtx (0) Boolean
+      Use In-Band FEC (R/O) = 1           FMTP name: useinbandfec (1) Boolean
+
+
+  0:00.067	Opal Liste...ae21797700	PTLib	Created read/write mutex 0x7fadf0003bc0
+  0:00.067	Opal Liste...ae21797700	OpalUDP	Binding to interface: 172.20.0.2:5060
+  0:00.067	Opal Liste...ae21797700	PTLib	Created read/write mutex 0x7fadf0009490
+  0:00.067	Opal Liste...ae21797700	SIP	Waiting for PDU on udp$125.212.212.45:5060<if=udp$172.20.0.2:5060>
+  0:00.067	Opal Liste...ae21797700	SIP	PDU received: rem=udp$125.212.212.45:5060,local=udp$172.20.0.2:5060,if=172.20.0.2%eth0
+SIP/2.0 100 Attempting Kazoo query
+CSeq: 2 REGISTER
+Via: SIP/2.0/UDP 172.20.0.2:5060;branch=z9hG4bK680b9581-0ff3-e911-9335-0242ac140002;rport=11981;received=113.161.67.92
+From: <sip:agent01@xxx3.antbuddy.com>;tag=7cc29281-0ff3-e911-9335-0242ac140002
+Call-ID: 6cb99281-0ff3-e911-9335-0242ac140002@61c71e006a9b
+To: <sip:agent01@xxx3.antbuddy.com>
+Content-Length: 0
+
+
+  0:00.067	Opal Liste...ae21797700	SIP	Queueing PDU "2 REGISTER <100>", transaction=z9hG4bK680b9581-0ff3-e911-9335-0242ac140002, token=6cb99281-0ff3-e911-9335-0242ac140002@61c71e006a9b
+  0:00.067	Opal Liste...ae21797700	Opal	Transport clean up on termination
+  0:00.067	                 sipcmd	OpalPlugin	to_customised_options:
+          Format Name       = SILK-8
+           Media Type       = audio
+         Payload Type       = [pt=106]
+        Encoding Name       = SILK
+             Channels (R/W) = 1          UnsignedInt
+           Clock Rate (R/O) = 8000       UnsignedInt
+           Complexity (R/O) = 1          UnsignedInt
+           Frame Time (R/O) = 160        UnsignedInt
+         Max Bit Rate (R/O) = 20000      UnsignedInt
+       Max Frame Size (R/O) = 50         UnsignedInt
+Max Frames Per Packet (R/O) = 5          UnsignedInt
+         Needs Jitter (R/O) = 1          Boolean
+             Protocol (R/O) = SIP        String
+ Rx Frames Per Packet (R/W) = 5          UnsignedInt
+ Tx Frames Per Packet (R/W) = 2          UnsignedInt
+              Use DTX (R/O) = 0           FMTP name: usedtx (0) Boolean
+      Use In-Band FEC (R/O) = 1           FMTP name: useinbandfec (1) Boolean
+
+
+  0:00.067	Opal Liste...ae21797700	Opal	Transport Close
+  0:00.068	    Pool:0x7fae21756700	SIP	Handling PDU "2 REGISTER <100>" for transaction=z9hG4bK680b9581-0ff3-e911-9335-0242ac140002
+  0:00.068	    Pool:0x7fae21756700	SIP	REGISTER transaction id=z9hG4bK680b9581-0ff3-e911-9335-0242ac140002 proceeding.
+  0:00.068	    Pool:0x7fae21756700	SIP	Handled PDU "2 REGISTER <100>"
+  0:00.068	    Pool:0x7fae21756700	PTLib	Destroying read/write mutex 0x7fadf0009490
+  0:00.068	Opal Liste...ae21797700	Opal	Deleted transport udp$125.212.212.45:5060<if=udp$172.20.0.2:5060>
+  0:00.068	Opal Liste...ae21797700	PTLib	Destroying read/write mutex 0x7fadf0003bc0
+  0:00.069	                 sipcmd	OpalPlugin	to_customised_options:
+         Format Name       = H.261
+          Media Type       = video
+        Payload Type       = H261
+       Encoding Name       = h261
+             Annex D (R/O) = 0           FMTP name: D (0) Boolean
+             CIF MPI (R/W) = 1           FMTP name: CIF (33) UnsignedInt
+          Clock Rate (R/O) = 90000      UnsignedInt
+        Content Role (R/W) = No Role    Enum
+   Content Role Mask (R/W) = 0          UnsignedInt
+        Frame Height (R/W) = 288        UnsignedInt
+          Frame Time (R/W) = 1500       UnsignedInt
+         Frame Width (R/W) = 352        UnsignedInt
+        Max Bit Rate (R/W) = 621700     UnsignedInt
+ Max Rx Frame Height (R/O) = 288        UnsignedInt
+  Max Rx Frame Width (R/O) = 352        UnsignedInt
+  Max Tx Packet Size (R/O) = 1444       UnsignedInt
+ Min Rx Frame Height (R/O) = 144        UnsignedInt
+  Min Rx Frame Width (R/O) = 176        UnsignedInt
+            Protocol (R/O) = SIP        String
+            QCIF MPI (R/W) = 1           FMTP name: QCIF (33) UnsignedInt
+ Rate Control Period (R/W) = 1000       UnsignedInt
+     Rate Controller (R/W) =            String
+     Target Bit Rate (R/W) = 621700     UnsignedInt
+ Tx Key Frame Period (R/W) = 125        UnsignedInt
+
+
+  0:00.070	                 sipcmd	OpalPlugin	to_customised_options:
+                  Format Name       = H.263
+                   Media Type       = video
+                 Payload Type       = H263
+                Encoding Name       = H263
+Annex F - Advanced Prediction (R/W) = 1           FMTP name: F (0) Boolean
+                      CIF MPI (R/W) = 1           FMTP name: CIF (33) UnsignedInt
+                    CIF16 MPI (R/W) = 1           FMTP name: CIF16 (33) UnsignedInt
+                     CIF4 MPI (R/W) = 1           FMTP name: CIF4 (33) UnsignedInt
+                   Clock Rate (R/O) = 90000      UnsignedInt
+                 Content Role (R/W) = No Role    Enum
+            Content Role Mask (R/W) = 0          UnsignedInt
+                 Frame Height (R/W) = 288        UnsignedInt
+                   Frame Time (R/W) = 1500       UnsignedInt
+                  Frame Width (R/W) = 352        UnsignedInt
+                 Max Bit Rate (R/W) = 327600     UnsignedInt
+          Max Rx Frame Height (R/W) = 1152       UnsignedInt
+           Max Rx Frame Width (R/W) = 1408       UnsignedInt
+           Max Tx Packet Size (R/O) = 1444       UnsignedInt
+                        MaxBR (R/W) = 0           FMTP name: maxbr (0) UnsignedInt
+          Media Packetization (R/O) = RFC2190    String
+          Min Rx Frame Height (R/W) = 96         UnsignedInt
+           Min Rx Frame Width (R/W) = 128        UnsignedInt
+                     Protocol (R/O) = SIP        String
+                     QCIF MPI (R/W) = 1           FMTP name: QCIF (33) UnsignedInt
+          Rate Control Period (R/W) = 1000       UnsignedInt
+              Rate Controller (R/W) =            String
+                    SQCIF MPI (R/W) = 1           FMTP name: SQCIF (33) UnsignedInt
+              Target Bit Rate (R/W) = 327600     UnsignedInt
+          Tx Key Frame Period (R/W) = 125        UnsignedInt
+
+
+  0:00.071	                 sipcmd	OpalPlugin	to_customised_options changed option "MaxBR" from "0" to "3276"
+  0:00.071	                 sipcmd	OpalPlugin	to_customised_options:
+                          Format Name       = H.263plus
+                           Media Type       = video
+                         Payload Type       = [pt=99]
+                        Encoding Name       = H263-1998
+ Annex D - Unrestricted Motion Vector (R/W) = 1           FMTP name: D (0) Boolean
+        Annex F - Advanced Prediction (R/W) = 1           FMTP name: F (0) Boolean
+      Annex I - Advanced INTRA Coding (R/W) = 1           FMTP name: I (0) Boolean
+          Annex J - Deblocking Filter (R/W) = 1           FMTP name: J (0) Boolean
+            Annex K - Slice Structure (R/W) = 0           FMTP name: K (0) UnsignedInt
+Annex N - Reference Picture Selection (R/O) = 0           FMTP name: N (0) Boolean
+      Annex T - Modified Quantization (R/O) = 0           FMTP name: T (0) Boolean
+                              CIF MPI (R/W) = 1           FMTP name: CIF (33) UnsignedInt
+                            CIF16 MPI (R/W) = 1           FMTP name: CIF16 (33) UnsignedInt
+                             CIF4 MPI (R/W) = 1           FMTP name: CIF4 (33) UnsignedInt
+                           Clock Rate (R/O) = 90000      UnsignedInt
+                         Content Role (R/W) = No Role    Enum
+                    Content Role Mask (R/W) = 0          UnsignedInt
+                           Custom MPI (R/W) = 0,0,33      FMTP name: CUSTOM (0,0,33) String
+                         Frame Height (R/W) = 288        UnsignedInt
+                           Frame Time (R/W) = 1500       UnsignedInt
+                          Frame Width (R/W) = 352        UnsignedInt
+                         Max Bit Rate (R/W) = 327600     UnsignedInt
+                  Max Rx Frame Height (R/W) = 576        UnsignedInt
+                   Max Rx Frame Width (R/W) = 704        UnsignedInt
+                   Max Tx Packet Size (R/O) = 1444       UnsignedInt
+                                MaxBR (R/W) = 0           FMTP name: maxbr (0) UnsignedInt
+                 Media Packetizations (R/O) = RFC2429,RFC2190 String
+                  Min Rx Frame Height (R/W) = 96         UnsignedInt
+                   Min Rx Frame Width (R/W) = 128        UnsignedInt
+                             Protocol (R/O) = SIP        String
+                             QCIF MPI (R/W) = 1           FMTP name: QCIF (33) UnsignedInt
+                  Rate Control Period (R/W) = 1000       UnsignedInt
+                      Rate Controller (R/W) =            String
+                            SQCIF MPI (R/W) = 1           FMTP name: SQCIF (33) UnsignedInt
+                      Target Bit Rate (R/W) = 327600     UnsignedInt
+           Temporal Spatial Trade Off (R/W) = 31         UnsignedInt
+                  Tx Key Frame Period (R/W) = 125        UnsignedInt
+
+
+  0:00.073	                 sipcmd	OpalPlugin	to_customised_options changed option "MaxBR" from "0" to "3276"
+  0:00.073	                 sipcmd	OpalPlugin	to_customised_options changed option "CIF16 MPI" from "1" to "33"
+  0:00.073	                 sipcmd	OpalPlugin	to_customised_options:
+                Format Name       = H.264-0
+                 Media Type       = video
+               Payload Type       = [pt=104]
+              Encoding Name       = H264
+                 Clock Rate (R/O) = 90000      UnsignedInt
+               Content Role (R/W) = No Role    Enum
+          Content Role Mask (R/W) = 0          UnsignedInt
+               Frame Height (R/W) = 288        UnsignedInt
+                 Frame Time (R/W) = 1500       UnsignedInt
+                Frame Width (R/W) = 352        UnsignedInt
+                      Level (R/W) = 3          Enum
+               Max Bit Rate (R/W) = 240000000  UnsignedInt
+              Max NALU Size (R/W) = 1400        FMTP name: max-rcmd-nalu-size (1400)  H.245 Ordinal: 9 Collapsing TCS OLC RM UnsignedInt
+        Max Rx Frame Height (R/W) = 2304       UnsignedInt
+         Max Rx Frame Width (R/W) = 2816       UnsignedInt
+         Max Tx Packet Size (R/O) = 1444       UnsignedInt
+        Min Rx Frame Height (R/W) = 96         UnsignedInt
+         Min Rx Frame Width (R/W) = 128        UnsignedInt
+         Packetization Mode (R/O) = 0           FMTP name: packetization-mode (0) UnsignedInt
+                    Profile (R/W) = Baseline   Enum
+                   Protocol (R/O) = SIP        String
+        Rate Control Period (R/W) = 1000       UnsignedInt
+            Rate Controller (R/W) =            String
+Send Access Unit Delimiters (R/W) = 0          Boolean
+             SIP/SDP Max BR (R/O) = 0           FMTP name: max-br (0) UnsignedInt
+             SIP/SDP Max FS (R/O) = 0           FMTP name: max-fs (0) UnsignedInt
+           SIP/SDP Max MBPS (R/O) = 0           FMTP name: max-mbps (0) UnsignedInt
+    SIP/SDP Profile & Level (R/O) = 42801e      FMTP name: profile-level-id (42800A) OctetString
+            Target Bit Rate (R/W) = 240000000  UnsignedInt
+ Temporal Spatial Trade Off (R/W) = 31         UnsignedInt
+        Tx Key Frame Period (R/W) = 125        UnsignedInt
+
+
+  0:00.074	                 sipcmd	x264	Level "3" selected index 8
+  0:00.074	                 sipcmd	x264	Max resolution 2816x2304 selected index 8
+  0:00.074	                 sipcmd	x264	Reduced max resolution to 1408x1152 (25344>25344)
+  0:00.074	                 sipcmd	OpalPlugin	to_customised_options changed option "Max Rx Frame Height" from "2304" to "1152"
+  0:00.074	                 sipcmd	OpalPlugin	to_customised_options changed option "Max Rx Frame Width" from "2816" to "1408"
+  0:00.074	                 sipcmd	OpalPlugin	to_customised_options changed option "SIP/SDP Max BR" from "0" to "240000"
+  0:00.074	                 sipcmd	OpalPlugin	to_customised_options changed option "SIP/SDP Max FS" from "0" to "6336"
+  0:00.074	                 sipcmd	OpalPlugin	to_customised_options changed option "SIP/SDP Max MBPS" from "0" to "380160"
+  0:00.074	                 sipcmd	OpalPlugin	to_customised_options:
+                Format Name       = H.264-1
+                 Media Type       = video
+               Payload Type       = [pt=103]
+              Encoding Name       = H264
+                 Clock Rate (R/O) = 90000      UnsignedInt
+               Content Role (R/W) = No Role    Enum
+          Content Role Mask (R/W) = 0          UnsignedInt
+               Frame Height (R/W) = 288        UnsignedInt
+                 Frame Time (R/W) = 1500       UnsignedInt
+                Frame Width (R/W) = 352        UnsignedInt
+                      Level (R/W) = 3          Enum
+               Max Bit Rate (R/W) = 240000000  UnsignedInt
+              Max NALU Size (R/W) = 1400        FMTP name: max-rcmd-nalu-size (1400)  H.245 Ordinal: 9 Collapsing TCS OLC RM UnsignedInt
+        Max Rx Frame Height (R/W) = 2304       UnsignedInt
+         Max Rx Frame Width (R/W) = 2816       UnsignedInt
+         Max Tx Packet Size (R/O) = 1444       UnsignedInt
+        Min Rx Frame Height (R/W) = 96         UnsignedInt
+         Min Rx Frame Width (R/W) = 128        UnsignedInt
+         Packetization Mode (R/O) = 1           FMTP name: packetization-mode (0) UnsignedInt
+                    Profile (R/W) = Baseline   Enum
+                   Protocol (R/O) = SIP        String
+        Rate Control Period (R/W) = 1000       UnsignedInt
+            Rate Controller (R/W) =            String
+Send Access Unit Delimiters (R/W) = 0          Boolean
+             SIP/SDP Max BR (R/O) = 0           FMTP name: max-br (0) UnsignedInt
+             SIP/SDP Max FS (R/O) = 0           FMTP name: max-fs (0) UnsignedInt
+           SIP/SDP Max MBPS (R/O) = 0           FMTP name: max-mbps (0) UnsignedInt
+    SIP/SDP Profile & Level (R/O) = 42801e      FMTP name: profile-level-id (42800A) OctetString
+            Target Bit Rate (R/W) = 240000000  UnsignedInt
+ Temporal Spatial Trade Off (R/W) = 31         UnsignedInt
+        Tx Key Frame Period (R/W) = 125        UnsignedInt
+
+
+  0:00.075	                 sipcmd	x264	Level "3" selected index 8
+  0:00.075	                 sipcmd	x264	Max resolution 2816x2304 selected index 8
+  0:00.075	                 sipcmd	x264	Reduced max resolution to 1408x1152 (25344>25344)
+  0:00.075	                 sipcmd	OpalPlugin	to_customised_options changed option "Max Rx Frame Height" from "2304" to "1152"
+  0:00.075	                 sipcmd	OpalPlugin	to_customised_options changed option "Max Rx Frame Width" from "2816" to "1408"
+  0:00.075	                 sipcmd	OpalPlugin	to_customised_options changed option "SIP/SDP Max BR" from "0" to "240000"
+  0:00.075	                 sipcmd	OpalPlugin	to_customised_options changed option "SIP/SDP Max FS" from "0" to "6336"
+  0:00.076	                 sipcmd	OpalPlugin	to_customised_options changed option "SIP/SDP Max MBPS" from "0" to "380160"
+  0:00.076	                 sipcmd	OpalPlugin	to_customised_options:
+         Format Name       = theora
+          Media Type       = video
+        Payload Type       = [pt=91]
+       Encoding Name       = theora
+        CAP Delivery (R/W) = in_band     FMTP name: delivery-method (in_band) String
+          CAP Height (R/W) = 576         FMTP name: height (15) UnsignedInt
+        CAP Sampling (R/W) = YCbCr-4:2:0  FMTP name: sampling (YCbCr-4:2:0) String
+           CAP Width (R/W) = 704         FMTP name: width (15) UnsignedInt
+          Clock Rate (R/O) = 90000      UnsignedInt
+        Content Role (R/W) = No Role    Enum
+   Content Role Mask (R/W) = 0          UnsignedInt
+        Frame Height (R/W) = 288        UnsignedInt
+          Frame Time (R/W) = 1500       UnsignedInt
+         Frame Width (R/W) = 352        UnsignedInt
+        Max Bit Rate (R/W) = 768000     UnsignedInt
+ Max Rx Frame Height (R/O) = 720        UnsignedInt
+  Max Rx Frame Width (R/O) = 1280       UnsignedInt
+  Max Tx Packet Size (R/O) = 1444       UnsignedInt
+ Min Rx Frame Height (R/O) = 144        UnsignedInt
+  Min Rx Frame Width (R/O) = 176        UnsignedInt
+            Protocol (R/O) = SIP        String
+ Rate Control Period (R/W) = 1000       UnsignedInt
+     Rate Controller (R/W) =            String
+     Target Bit Rate (R/W) = 768000     UnsignedInt
+ Tx Key Frame Period (R/W) = 125        UnsignedInt
+
+
+  0:00.077	                 sipcmd	SIP	PDU is too large (2304 bytes) trying compact form.
+  0:00.078	                 sipcmd	SIP	PDU is likely too large (2254 bytes) for UDP datagram.
+  0:00.078	                 sipcmd	SIP	Sending PDU (2254 bytes) to: rem=udp$125.212.212.45:5060,local=udp$172.20.0.2:5060,if=172.20.0.2%eth0
+INVITE sip:8000@xxx3.antbuddy.com SIP/2.0
+CSeq: 1 INVITE
+v: SIP/2.0/UDP 172.20.0.2:5060;branch=z9hG4bKaa829581-0ff3-e911-9335-0242ac140002;rport
+User-Agent: sipcmd/1.0.1
+f: "root" <sip:agent01@xxx3.antbuddy.com>;tag=70509381-0ff3-e911-9335-0242ac140002
+i: 66559381-0ff3-e911-9335-0242ac140002@61c71e006a9b
+k: 100rel,replaces
+Organization: Command line VoIP testphone
+t: <sip:8000@xxx3.antbuddy.com>
+m: "root" <sip:agent01@xxx3.antbuddy.com@172.20.0.2>
+Allow: INVITE,ACK,OPTIONS,BYE,CANCEL,SUBSCRIBE,NOTIFY,REFER,MESSAGE,INFO,PING,PRACK
+l: 1658
+c: application/sdp
+Max-Forwards: 70
+
+v=0
+o=- 1571731153 1 IN IP4 172.20.0.2
+s=sipcmd/1.0.1
+c=IN IP4 172.20.0.2
+t=0 0
+m=audio 5000 RTP/AVP 9 109 110 125 107 121 8 0 93 94 95 126 3 108 105 106 120 122 101 100
+a=sendrecv
+a=rtpmap:9 G722/8000/1
+a=rtpmap:109 G7221/16000/1
+a=fmtp:109 bitrate=24000
+a=rtpmap:110 G7221/16000/1
+a=fmtp:110 bitrate=32000
+a=rtpmap:125 AMR-WB/16000/1
+a=fmtp:125 octet-align=1
+a=rtpmap:107 SILK/16000/1
+a=rtpmap:121 Speex/16000/1
+a=rtpmap:8 PCMA/8000/1
+a=rtpmap:0 PCMU/8000/1
+a=rtpmap:93 G726-16/8000/1
+a=rtpmap:94 G726-24/8000/1
+a=rtpmap:95 G726-32/8000/1
+a=rtpmap:126 G726-40/8000/1
+a=rtpmap:3 gsm/8000/1
+a=rtpmap:108 AMR/8000/1
+a=rtpmap:105 lpc10/8000/1
+a=rtpmap:106 SILK/8000/1
+a=rtpmap:120 Speex/8000/1
+a=rtpmap:122 iLBC/8000/1
+a=fmtp:122 mode=20
+a=rtpmap:101 telephone-event/8000
+a=fmtp:101 0-16,32,36
+a=rtpmap:100 NSE/8000
+a=fmtp:100 192-193
+a=maxptime:30
+m=video 5002 RTP/AVP 31 34 99 104 103 90 97 91
+b=AS:240000
+b=TIAS:240000000
+a=sendrecv
+a=rtpmap:31 h261/90000
+a=fmtp:31 CIF=1;QCIF=1
+a=rtpmap:34 H263/90000
+a=fmtp:34 F=1;CIF=1;CIF16=1;CIF4=1;maxbr=3276;QCIF=1;SQCIF=1
+a=rtpmap:99 H263-1998/90000
+a=fmtp:99 D=1;F=1;I=1;J=1;CIF=1;CIF4=1;maxbr=3276;QCIF=1;SQCIF=1
+a=rtpmap:104 H264/90000
+a=fmtp:104 max-br=240000;max-fs=6336;max-mbps=380160;profile-level-id=42801e
+a=rtpmap:103 H264/90000
+a=fmtp:103 packetization-mode=1;max-br=240000;max-fs=6336;max-mbps=380160;profile-level-id=42801e
+a=rtpmap:90 MP4V-ES/90000
+a=fmtp:90 profile-level-id=5
+a=rtpmap:97 raw/90000
+a=fmtp:97 rate=90000;height=288;width=352;colorimetry=BT601-5;depth=8;sampling=YCbCr-4:2:0
+a=rtpmap:91 theora/90000
+a=fmtp:91 height=576;width=704
+
+  0:00.078	                 sipcmd	OpalUDP	Setting interface to 172.20.0.2%eth0
+  0:00.078	                 sipcmd	SIP	Transaction timers set: retry=10.000, completion=32.000
+  0:00.078	                 sipcmd	OpalCon	SetPhase from UninitialisedPhase to SetUpPhase for Call[Cf3f8d7a11]-EP<sip>[70509381-0ff3-e911-9335-0242ac140002]
+  0:00.078	                 sipcmd	OpalCon	OnSetUpConnectionCall[Cf3f8d7a11]-EP<sip>[70509381-0ff3-e911-9335-0242ac140002]
+  0:00.078	                 sipcmd	OpalEP	OnSetUpConnection Call[Cf3f8d7a11]-EP<sip>[70509381-0ff3-e911-9335-0242ac140002]
+  0:00.078	                 sipcmd	OpalMan	SetUpCall succeeded, call=Call[Cf3f8d7a11]
+  0:00.083	Opal Liste...ae21797700	PTLib	Created read/write mutex 0x7fadf0003bc0
+  0:00.083	Opal Liste...ae21797700	OpalUDP	Binding to interface: 172.20.0.2:5060
+  0:00.083	Opal Liste...ae21797700	PTLib	Created read/write mutex 0x7fadf0006c30
+  0:00.083	Opal Liste...ae21797700	SIP	Waiting for PDU on udp$125.212.212.45:5060<if=udp$172.20.0.2:5060>
+  0:00.084	Opal Liste...ae21797700	SIP	PDU received: rem=udp$125.212.212.45:5060,local=udp$172.20.0.2:5060,if=172.20.0.2%eth0
+SIP/2.0 200 OK
+CSeq: 2 REGISTER
+Via: SIP/2.0/UDP 172.20.0.2:5060;branch=z9hG4bK680b9581-0ff3-e911-9335-0242ac140002;rport=11981;received=113.161.67.92
+From: <sip:agent01@xxx3.antbuddy.com>;tag=7cc29281-0ff3-e911-9335-0242ac140002
+Call-ID: 6cb99281-0ff3-e911-9335-0242ac140002@61c71e006a9b
+To: <sip:agent01@xxx3.antbuddy.com>;tag=1700698b7171530b389f27beb360ed9b.f055
+Contact: <sip:agent01@172.20.0.2:5060>;q=1;expires=3600;received="sip:113.161.67.92:11981"
+Content-Length: 0
+
+
+  0:00.084	Opal Liste...ae21797700	SIP	Queueing PDU "2 REGISTER <200>", transaction=z9hG4bK680b9581-0ff3-e911-9335-0242ac140002, token=6cb99281-0ff3-e911-9335-0242ac140002@61c71e006a9b
+  0:00.084	Opal Liste...ae21797700	Opal	Transport clean up on termination
+  0:00.084	Opal Liste...ae21797700	Opal	Transport Close
+  0:00.084	    Pool:0x7fae21756700	SIP	Handling PDU "2 REGISTER <200>" for transaction=z9hG4bK680b9581-0ff3-e911-9335-0242ac140002
+  0:00.084	    Pool:0x7fae21756700	SIP	REGISTER transaction id=z9hG4bK680b9581-0ff3-e911-9335-0242ac140002 completing.
+  0:00.084	    Pool:0x7fae21756700	SIP	Finalising handlers interface "172.20.0.2%eth0"
+  0:00.084	    Pool:0x7fae21756700	OpalUDP	Setting interface to 172.20.0.2%eth0
+  0:00.084	Opal Liste...ae21797700	Opal	Deleted transport udp$125.212.212.45:5060<if=udp$172.20.0.2:5060>
+  0:00.084	    Pool:0x7fae21756700	SIP	No User-Agent or Server fields, Product Info unknown.
+  0:00.084	Opal Liste...ae21797700	PTLib	Destroying read/write mutex 0x7fadf0003bc0
+  0:00.084	    Pool:0x7fae21756700	SIP	Remote indicated change of REGISTER Contact address(s) (<sip:agent01@172.20.0.2:5060>;q=1;received=sip:113.161.67.92:11981) required due to NAT address udp$113.161.67.92:11981, previous=
+  0:00.084	    Pool:0x7fae21756700	SIP	Expiry time for REGISTER set to 0 seconds.
+  0:00.084	    Pool:0x7fae21756700	SIP	Changing REGISTER handler from Subscribing to Refreshing, target=sip:agent01@xxx3.antbuddy.com, id=6cb99281-0ff3-e911-9335-0242ac140002@61c71e006a9b
+  0:00.084	    Pool:0x7fae21756700	PTLib	Created read/write mutex 0x7fadf4008c70
+  0:00.085	    Pool:0x7fae21756700	SIP	Transaction created.
+  0:00.085	    Pool:0x7fae21756700	HTTP	Adding authentication information
+  0:00.085	    Pool:0x7fae21756700	SIP	Transaction remembering interface "172.20.0.2%eth0"
+  0:00.085	    Pool:0x7fae21756700	SIP	No SRV lookup as has explicit port number.
+  0:00.085	    Pool:0x7fae21756700	SIP	Transaction remote address is udp$125.212.212.45:5060
+  0:00.085	    Pool:0x7fae21756700	SIP	Sending PDU (845 bytes) to: rem=udp$125.212.212.45:5060,local=udp$172.20.0.2:5060,if=172.20.0.2%eth0
+REGISTER sip:xxx3.antbuddy.com SIP/2.0
+Route: <sip:125.212.212.45:5060;lr>
+CSeq: 3 REGISTER
+Via: SIP/2.0/UDP 172.20.0.2:5060;branch=z9hG4bKd0d69881-0ff3-e911-9335-0242ac140002;rport
+User-Agent: sipcmd/1.0.1
+Authorization: Digest username="agent01", realm="xxx3.antbuddy.com", nonce="Xa63/V2uttGowQbJHpqpJ/e62OmrVZYH", uri="sip:xxx3.antbuddy.com", algorithm=MD5, response="b907e93770279f77f137eb91ede94dfb"
+From: <sip:agent01@xxx3.antbuddy.com>;tag=7cc29281-0ff3-e911-9335-0242ac140002
+Call-ID: 6cb99281-0ff3-e911-9335-0242ac140002@61c71e006a9b
+Organization: Command line VoIP testphone
+To: <sip:agent01@xxx3.antbuddy.com>
+Contact: <sip:agent01@172.20.0.2:5060>;q=1;received=sip:113.161.67.92:11981
+Allow: INVITE,ACK,OPTIONS,BYE,CANCEL,SUBSCRIBE,NOTIFY,REFER,MESSAGE,INFO,PING,PRACK
+Expires: 0
+Content-Length: 0
+Max-Forwards: 70
+
+
+  0:00.086	    Pool:0x7fae21756700	OpalUDP	Setting interface to 172.20.0.2%eth0
+  0:00.086	    Pool:0x7fae21756700	SIP	Transaction timers set: retry=10.000, completion=16.000
+  0:00.086	    Pool:0x7fae21756700	SIP	REGISTER transaction id=z9hG4bK680b9581-0ff3-e911-9335-0242ac140002 completed.
+  0:00.086	    Pool:0x7fae21756700	SIP	Handled PDU "2 REGISTER <200>"
+  0:00.086	    Pool:0x7fae21756700	PTLib	Destroying read/write mutex 0x7fadf0006c30
+  0:00.093	Opal Liste...ae21797700	PTLib	Created read/write mutex 0x7fadf0003bc0
+  0:00.093	Opal Liste...ae21797700	OpalUDP	Binding to interface: 172.20.0.2:5060
+  0:00.093	Opal Liste...ae21797700	PTLib	Created read/write mutex 0x7fadf0006c30
+  0:00.093	Opal Liste...ae21797700	SIP	Waiting for PDU on udp$125.212.212.45:5060<if=udp$172.20.0.2:5060>
+  0:00.093	Opal Liste...ae21797700	SIP	PDU received: rem=udp$125.212.212.45:5060,local=udp$172.20.0.2:5060,if=172.20.0.2%eth0
+SIP/2.0 200 OK
+CSeq: 3 REGISTER
+Via: SIP/2.0/UDP 172.20.0.2:5060;branch=z9hG4bKd0d69881-0ff3-e911-9335-0242ac140002;rport=11981;received=113.161.67.92
+From: <sip:agent01@xxx3.antbuddy.com>;tag=7cc29281-0ff3-e911-9335-0242ac140002
+Call-ID: 6cb99281-0ff3-e911-9335-0242ac140002@61c71e006a9b
+To: <sip:agent01@xxx3.antbuddy.com>;tag=1700698b7171530b389f27beb360ed9b.4837
+Content-Length: 0
+
+
+  0:00.093	Opal Liste...ae21797700	SIP	Queueing PDU "3 REGISTER <200>", transaction=z9hG4bKd0d69881-0ff3-e911-9335-0242ac140002, token=6cb99281-0ff3-e911-9335-0242ac140002@61c71e006a9b
+  0:00.093	    Pool:0x7fae21756700	SIP	Handling PDU "3 REGISTER <200>" for transaction=z9hG4bKd0d69881-0ff3-e911-9335-0242ac140002
+  0:00.093	Opal Liste...ae21797700	Opal	Transport clean up on termination
+  0:00.093	Opal Liste...ae21797700	Opal	Transport Close
+  0:00.093	    Pool:0x7fae21756700	SIP	REGISTER transaction id=z9hG4bKd0d69881-0ff3-e911-9335-0242ac140002 completing.
+  0:00.093	Opal Liste...ae21797700	Opal	Deleted transport udp$125.212.212.45:5060<if=udp$172.20.0.2:5060>
+  0:00.094	    Pool:0x7fae21756700	SIP	Finalising handlers interface "172.20.0.2%eth0"
+  0:00.094	    Pool:0x7fae21756700	OpalUDP	Setting interface to 172.20.0.2%eth0
+  0:00.094	    Pool:0x7fae21756700	SIP	No User-Agent or Server fields, Product Info unknown.
+  0:00.094	Opal Liste...ae21797700	PTLib	Destroying read/write mutex 0x7fadf0003bc0
+  0:00.094	    Pool:0x7fae21756700	SIP	Re-registering NAT address change (<sip:agent01@172.20.0.2:5060>;q=1;received=sip:113.161.67.92:11981) to udp$113.161.67.92:11981
+  0:00.094	    Pool:0x7fae21756700	SIP	Expiry time for REGISTER set to 3600 seconds.
+  0:00.094	    Pool:0x7fae21756700	PTLib	Created read/write mutex 0x7fadf400ade0
+  0:00.094	    Pool:0x7fae21756700	SIP	Transaction created.
+  0:00.095	    Pool:0x7fae21756700	HTTP	Adding authentication information
+  0:00.095	    Pool:0x7fae21756700	SIP	Transaction remembering interface "172.20.0.2%eth0"
+  0:00.095	    Pool:0x7fae21756700	SIP	No SRV lookup as has explicit port number.
+  0:00.095	    Pool:0x7fae21756700	SIP	Transaction remote address is udp$125.212.212.45:5060
+  0:00.095	    Pool:0x7fae21756700	SIP	Sending PDU (852 bytes) to: rem=udp$125.212.212.45:5060,local=udp$172.20.0.2:5060,if=172.20.0.2%eth0
+REGISTER sip:xxx3.antbuddy.com SIP/2.0
+Route: <sip:125.212.212.45:5060;lr>
+CSeq: 4 REGISTER
+Via: SIP/2.0/UDP 172.20.0.2:5060;branch=z9hG4bKca499a81-0ff3-e911-9335-0242ac140002;rport
+User-Agent: sipcmd/1.0.1
+Authorization: Digest username="agent01", realm="xxx3.antbuddy.com", nonce="Xa63/V2uttGowQbJHpqpJ/e62OmrVZYH", uri="sip:xxx3.antbuddy.com", algorithm=MD5, response="b907e93770279f77f137eb91ede94dfb"
+From: <sip:agent01@xxx3.antbuddy.com>;tag=7cc29281-0ff3-e911-9335-0242ac140002
+Call-ID: 6cb99281-0ff3-e911-9335-0242ac140002@61c71e006a9b
+Organization: Command line VoIP testphone
+To: <sip:agent01@xxx3.antbuddy.com>
+Contact: <sip:agent01@113.161.67.92:11981>;q=1;received=sip:113.161.67.92:11981
+Allow: INVITE,ACK,OPTIONS,BYE,CANCEL,SUBSCRIBE,NOTIFY,REFER,MESSAGE,INFO,PING,PRACK
+Expires: 3600
+Content-Length: 0
+Max-Forwards: 70
+
+
+  0:00.095	    Pool:0x7fae21756700	OpalUDP	Setting interface to 172.20.0.2%eth0
+  0:00.095	    Pool:0x7fae21756700	SIP	Transaction timers set: retry=10.000, completion=16.000
+  0:00.095	    Pool:0x7fae21756700	SIP	REGISTER transaction id=z9hG4bKd0d69881-0ff3-e911-9335-0242ac140002 completed.
+  0:00.095	    Pool:0x7fae21756700	SIP	Handled PDU "3 REGISTER <200>"
+  0:00.095	    Pool:0x7fae21756700	PTLib	Destroying read/write mutex 0x7fadf0006c30
+  0:00.107	Opal Liste...ae21797700	PTLib	Created read/write mutex 0x7fadf00094b0
+  0:00.107	Opal Liste...ae21797700	OpalUDP	Binding to interface: 172.20.0.2:5060
+  0:00.107	Opal Liste...ae21797700	PTLib	Created read/write mutex 0x7fadf0003f80
+  0:00.107	Opal Liste...ae21797700	SIP	Waiting for PDU on udp$125.212.212.45:5060<if=udp$172.20.0.2:5060>
+  0:00.107	Opal Liste...ae21797700	SIP	PDU received: rem=udp$125.212.212.45:5060,local=udp$172.20.0.2:5060,if=172.20.0.2%eth0
+SIP/2.0 100 Attempting Kazoo query
+CSeq: 4 REGISTER
+Via: SIP/2.0/UDP 172.20.0.2:5060;branch=z9hG4bKca499a81-0ff3-e911-9335-0242ac140002;rport=11981;received=113.161.67.92
+From: <sip:agent01@xxx3.antbuddy.com>;tag=7cc29281-0ff3-e911-9335-0242ac140002
+Call-ID: 6cb99281-0ff3-e911-9335-0242ac140002@61c71e006a9b
+To: <sip:agent01@xxx3.antbuddy.com>
+Content-Length: 0
+
+
+  0:00.108	Opal Liste...ae21797700	SIP	Queueing PDU "4 REGISTER <100>", transaction=z9hG4bKca499a81-0ff3-e911-9335-0242ac140002, token=6cb99281-0ff3-e911-9335-0242ac140002@61c71e006a9b
+  0:00.108	Opal Liste...ae21797700	Opal	Transport clean up on termination
+  0:00.108	Opal Liste...ae21797700	Opal	Transport Close
+  0:00.108	    Pool:0x7fae21756700	SIP	Handling PDU "4 REGISTER <100>" for transaction=z9hG4bKca499a81-0ff3-e911-9335-0242ac140002
+  0:00.108	    Pool:0x7fae21756700	SIP	REGISTER transaction id=z9hG4bKca499a81-0ff3-e911-9335-0242ac140002 proceeding.
+  0:00.108	    Pool:0x7fae21756700	SIP	Handled PDU "4 REGISTER <100>"
+  0:00.108	    Pool:0x7fae21756700	PTLib	Destroying read/write mutex 0x7fadf0003f80
+  0:00.108	Opal Liste...ae21797700	Opal	Deleted transport udp$125.212.212.45:5060<if=udp$172.20.0.2:5060>
+  0:00.108	Opal Liste...ae21797700	PTLib	Destroying read/write mutex 0x7fadf00094b0
+  0:00.120	Opal Liste...ae21797700	PTLib	Created read/write mutex 0x7fadf00094b0
+  0:00.120	Opal Liste...ae21797700	OpalUDP	Binding to interface: 172.20.0.2:5060
+  0:00.120	Opal Liste...ae21797700	PTLib	Created read/write mutex 0x7fadf0004020
+  0:00.120	Opal Liste...ae21797700	SIP	Waiting for PDU on udp$125.212.212.45:5060<if=udp$172.20.0.2:5060>
+  0:00.120	Opal Liste...ae21797700	SIP	PDU received: rem=udp$125.212.212.45:5060,local=udp$172.20.0.2:5060,if=172.20.0.2%eth0
+SIP/2.0 200 OK
+CSeq: 4 REGISTER
+Via: SIP/2.0/UDP 172.20.0.2:5060;branch=z9hG4bKca499a81-0ff3-e911-9335-0242ac140002;rport=11981;received=113.161.67.92
+From: <sip:agent01@xxx3.antbuddy.com>;tag=7cc29281-0ff3-e911-9335-0242ac140002
+Call-ID: 6cb99281-0ff3-e911-9335-0242ac140002@61c71e006a9b
+To: <sip:agent01@xxx3.antbuddy.com>;tag=1700698b7171530b389f27beb360ed9b.d5eb
+Contact: <sip:agent01@113.161.67.92:11981>;q=1;expires=3600;received="sip:113.161.67.92:11981"
+Content-Length: 0
+
+
+  0:00.121	Opal Liste...ae21797700	SIP	Queueing PDU "4 REGISTER <200>", transaction=z9hG4bKca499a81-0ff3-e911-9335-0242ac140002, token=6cb99281-0ff3-e911-9335-0242ac140002@61c71e006a9b
+  0:00.121	Opal Liste...ae21797700	Opal	Transport clean up on termination
+  0:00.121	Opal Liste...ae21797700	Opal	Transport Close
+  0:00.121	    Pool:0x7fae21756700	SIP	Handling PDU "4 REGISTER <200>" for transaction=z9hG4bKca499a81-0ff3-e911-9335-0242ac140002
+  0:00.121	    Pool:0x7fae21756700	SIP	REGISTER transaction id=z9hG4bKca499a81-0ff3-e911-9335-0242ac140002 completing.
+  0:00.121	    Pool:0x7fae21756700	SIP	Finalising handlers interface "172.20.0.2%eth0"
+  0:00.121	    Pool:0x7fae21756700	OpalUDP	Setting interface to 172.20.0.2%eth0
+  0:00.121	    Pool:0x7fae21756700	SIP	No User-Agent or Server fields, Product Info unknown.
+  0:00.121	Opal Liste...ae21797700	Opal	Deleted transport udp$125.212.212.45:5060<if=udp$172.20.0.2:5060>
+  0:00.121	Opal Liste...ae21797700	PTLib	Destroying read/write mutex 0x7fadf00094b0
+  0:00.121	    Pool:0x7fae21756700	SIP	Expiry time for REGISTER set to 3600 seconds.
+  0:00.121	    Pool:0x7fae21756700	SIP	Changing REGISTER handler from Refreshing to Subscribed, target=sip:agent01@xxx3.antbuddy.com, id=6cb99281-0ff3-e911-9335-0242ac140002@61c71e006a9b
+  0:00.121	    Pool:0x7fae21756700	SIP	REGISTER transaction id=z9hG4bKca499a81-0ff3-e911-9335-0242ac140002 completed.
+  0:00.121	    Pool:0x7fae21756700	SIP	Handled PDU "4 REGISTER <200>"
+  0:00.121	    Pool:0x7fae21756700	PTLib	Destroying read/write mutex 0x7fadf0004020
+  0:00.137	Opal Liste...ae21797700	PTLib	Created read/write mutex 0x7fadf0003bc0
+  0:00.137	Opal Liste...ae21797700	OpalUDP	Binding to interface: 172.20.0.2:5060
+  0:00.137	Opal Liste...ae21797700	PTLib	Created read/write mutex 0x7fadf0006c30
+  0:00.137	Opal Liste...ae21797700	SIP	Waiting for PDU on udp$125.212.212.45:5060<if=udp$172.20.0.2:5060>
+  0:00.137	Opal Liste...ae21797700	SIP	PDU received: rem=udp$125.212.212.45:5060,local=udp$172.20.0.2:5060,if=172.20.0.2%eth0
+NOTIFY sip:agent01@113.161.67.92:11981;transport=udp SIP/2.0
+CSeq: 11311784 NOTIFY
+Via: SIP/2.0/UDP 125.212.212.45:5060;branch=z9hG4bKd9a9.683b5bf30bd3de122d0151c73e5f864d.0
+Via: SIP/2.0/UDP 125.212.212.50:11000;received=10.127.15.75;rport=11000;branch=z9hG4bKKQrjtKUejDvDp
+User-Agent: AntBuddy
+From: <sip:agent01@xxx3.antbuddy.com>;tag=H3v2cg60BS8ZK
+Call-ID: add370c1-6f44-1238-f7b7-fa163ec9aa1a
+Supported: precondition, 100rel, path, replaces
+To: <sip:agent01@xxx3.antbuddy.com>
+Contact: <sip:mod_sofia@125.212.212.50:11000>
+Subscription-State: terminated;reason=noresource
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, PRACK, NOTIFY, PUBLISH, SUBSCRIBE
+Event: message-summary
+Allow-Events: talk, hold, conference, presence, as-feature-event, dialog, line-seize, call-info, sla, include-session-description, presence.winfo, message-summary, refer
+Content-Type: application/simple-message-summary
+Content-Length: 98
+Max-Forwards: 50
+
+Messages-Waiting: no
+Message-Account: sip:agent01@xxx3.antbuddy.com
+Voice-Message: 0/0 (0/0)
+
+
+  0:00.138	Opal Liste...ae21797700	SIP	Received NOTIFY message-summary
+  0:00.138	Opal Liste...ae21797700	SIP	Work around Asterisk bug in message-summary event package.
+  0:00.138	Opal Liste...ae21797700	SIP	Could not find a SUBSCRIBE corresponding to the NOTIFY message-summary
+  0:00.138	Opal Liste...ae21797700	PTLib	Created read/write mutex 0x7fae21794e00
+  0:00.139	Opal Liste...ae21797700	SIP	Sending PDU (504 bytes) to: rem=udp$125.212.212.45:5060,local=udp$172.20.0.2:5060,if=172.20.0.2%eth0
+SIP/2.0 481 Call Leg/Transaction Does Not Exist
+CSeq: 11311784 NOTIFY
+Via: SIP/2.0/UDP 125.212.212.45:5060;branch=z9hG4bKd9a9.683b5bf30bd3de122d0151c73e5f864d.0
+Via: SIP/2.0/UDP 125.212.212.50:11000;received=10.127.15.75;rport=11000;branch=z9hG4bKKQrjtKUejDvDp
+From: <sip:agent01@xxx3.antbuddy.com>;tag=H3v2cg60BS8ZK
+Call-ID: add370c1-6f44-1238-f7b7-fa163ec9aa1a
+To: <sip:agent01@xxx3.antbuddy.com>
+Contact: <sip:agent01@113.161.67.92:11981>;received=sip:113.161.67.92:11981
+Content-Length: 0
+
+
+  0:00.139	Opal Liste...ae21797700	OpalUDP	Setting interface to 172.20.0.2%eth0
+  0:00.139	Opal Liste...ae21797700	PTLib	Destroying read/write mutex 0x7fae21794e00
+  0:00.139	Opal Liste...ae21797700	PTLib	Destroying read/write mutex 0x7fadf0006c30
+  0:00.139	Opal Liste...ae21797700	Opal	Transport clean up on termination
+  0:00.139	Opal Liste...ae21797700	Opal	Transport Close
+  0:00.139	Opal Liste...ae21797700	Opal	Deleted transport udp$125.212.212.45:5060<if=udp$172.20.0.2:5060>
+  0:00.139	Opal Liste...ae21797700	PTLib	Destroying read/write mutex 0x7fadf0003bc0
+  0:00.139	Opal Liste...ae21797700	PTLib	Created read/write mutex 0x7fadf000afa0
+  0:00.139	Opal Liste...ae21797700	OpalUDP	Binding to interface: 172.20.0.2:5060
+  0:00.139	Opal Liste...ae21797700	PTLib	Created read/write mutex 0x7fadf0006c30
+  0:00.139	Opal Liste...ae21797700	SIP	Waiting for PDU on udp$125.212.212.45:5060<if=udp$172.20.0.2:5060>
+  0:00.140	Opal Liste...ae21797700	SIP	PDU received: rem=udp$125.212.212.45:5060,local=udp$172.20.0.2:5060,if=172.20.0.2%eth0
+NOTIFY sip:agent01@113.161.67.92:11981;transport=udp SIP/2.0
+CSeq: 11311784 NOTIFY
+Via: SIP/2.0/UDP 125.212.212.45:5060;branch=z9hG4bK4387.ecb44281f19bb471e7c9cbb036ff8b11.0
+Via: SIP/2.0/UDP 125.212.212.50:11000;received=10.127.15.75;rport=11000;branch=z9hG4bKm0HBvecjFpj0H
+User-Agent: AntBuddy
+From: <sip:agent01@xxx3.antbuddy.com>;tag=jcpUeBQ481yjF
+Call-ID: add38822-6f44-1238-f7b7-fa163ec9aa1a
+Supported: precondition, 100rel, path, replaces
+To: <sip:agent01@xxx3.antbuddy.com>
+Contact: <sip:mod_sofia@125.212.212.50:11000>
+Subscription-State: terminated;reason=noresource
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, PRACK, NOTIFY, PUBLISH, SUBSCRIBE
+Event: message-summary
+Allow-Events: talk, hold, conference, presence, as-feature-event, dialog, line-seize, call-info, sla, include-session-description, presence.winfo, message-summary, refer
+Content-Type: application/simple-message-summary
+Content-Length: 98
+Max-Forwards: 50
+
+Messages-Waiting: no
+Message-Account: sip:agent01@xxx3.antbuddy.com
+Voice-Message: 0/0 (0/0)
+
+
+  0:00.140	Opal Liste...ae21797700	SIP	Received NOTIFY message-summary
+  0:00.140	Opal Liste...ae21797700	SIP	Work around Asterisk bug in message-summary event package.
+  0:00.140	Opal Liste...ae21797700	SIP	Could not find a SUBSCRIBE corresponding to the NOTIFY message-summary
+  0:00.140	Opal Liste...ae21797700	PTLib	Created read/write mutex 0x7fae21794e00
+  0:00.141	Opal Liste...ae21797700	SIP	Sending PDU (504 bytes) to: rem=udp$125.212.212.45:5060,local=udp$172.20.0.2:5060,if=172.20.0.2%eth0
+SIP/2.0 481 Call Leg/Transaction Does Not Exist
+CSeq: 11311784 NOTIFY
+Via: SIP/2.0/UDP 125.212.212.45:5060;branch=z9hG4bK4387.ecb44281f19bb471e7c9cbb036ff8b11.0
+Via: SIP/2.0/UDP 125.212.212.50:11000;received=10.127.15.75;rport=11000;branch=z9hG4bKm0HBvecjFpj0H
+From: <sip:agent01@xxx3.antbuddy.com>;tag=jcpUeBQ481yjF
+Call-ID: add38822-6f44-1238-f7b7-fa163ec9aa1a
+To: <sip:agent01@xxx3.antbuddy.com>
+Contact: <sip:agent01@113.161.67.92:11981>;received=sip:113.161.67.92:11981
+Content-Length: 0
+
+
+  0:00.141	Opal Liste...ae21797700	OpalUDP	Setting interface to 172.20.0.2%eth0
+  0:00.141	Opal Liste...ae21797700	PTLib	Destroying read/write mutex 0x7fae21794e00
+  0:00.141	Opal Liste...ae21797700	PTLib	Destroying read/write mutex 0x7fadf0006c30
+  0:00.141	Opal Liste...ae21797700	Opal	Transport clean up on termination
+  0:00.141	Opal Liste...ae21797700	Opal	Transport Close
+  0:00.141	Opal Liste...ae21797700	Opal	Deleted transport udp$125.212.212.45:5060<if=udp$172.20.0.2:5060>
+  0:00.141	Opal Liste...ae21797700	PTLib	Destroying read/write mutex 0x7fadf000afa0
+  0:05.061	Housekeepe...ae217d8700	SIP	Set state Terminated_Success for REGISTER transaction id=z9hG4bK6cff9281-0ff3-e911-9335-0242ac140002
+  0:05.061	Housekeepe...ae217d8700	SIP	Completed state for transaction id=z9hG4bK6cff9281-0ff3-e911-9335-0242ac140002
+  0:05.087	Housekeepe...ae217d8700	SIP	Set state Terminated_Success for REGISTER transaction id=z9hG4bK680b9581-0ff3-e911-9335-0242ac140002
+  0:05.087	Housekeepe...ae217d8700	SIP	Completed state for transaction id=z9hG4bK680b9581-0ff3-e911-9335-0242ac140002
+  0:05.112	Housekeepe...ae217d8700	SIP	Set state Terminated_Success for REGISTER transaction id=z9hG4bKd0d69881-0ff3-e911-9335-0242ac140002
+  0:05.112	Housekeepe...ae217d8700	SIP	Completed state for transaction id=z9hG4bKd0d69881-0ff3-e911-9335-0242ac140002
+  0:05.137	Housekeepe...ae217d8700	SIP	Set state Terminated_Success for REGISTER transaction id=z9hG4bKca499a81-0ff3-e911-9335-0242ac140002
+  0:05.137	Housekeepe...ae217d8700	SIP	Completed state for transaction id=z9hG4bKca499a81-0ff3-e911-9335-0242ac140002
+  0:06.044	Opal Garba...ae2185a700	SIP	Transaction id=z9hG4bK6cff9281-0ff3-e911-9335-0242ac140002 destroyed.
+  0:06.044	Opal Garba...ae2185a700	PTLib	Destroying read/write mutex 0x14a6f50
+  0:06.044	Opal Garba...ae2185a700	SIP	Transaction id=z9hG4bK680b9581-0ff3-e911-9335-0242ac140002 destroyed.
+  0:06.044	Opal Garba...ae2185a700	PTLib	Destroying read/write mutex 0x7fadf4006110
+  0:06.044	Opal Garba...ae2185a700	SIP	Transaction id=z9hG4bKd0d69881-0ff3-e911-9335-0242ac140002 destroyed.
+  0:06.044	Opal Garba...ae2185a700	PTLib	Destroying read/write mutex 0x7fadf4008c70
+  0:06.044	Opal Garba...ae2185a700	SIP	Transaction id=z9hG4bKca499a81-0ff3-e911-9335-0242ac140002 destroyed.
+  0:06.044	Opal Garba...ae2185a700	PTLib	Destroying read/write mutex 0x7fadf400ade0
+  0:10.099	Housekeepe...ae217d8700	SIP	INVITE transaction id=z9hG4bKaa829581-0ff3-e911-9335-0242ac140002 timeout, making retry 1, timeout 20.000, state 1
+  0:10.099	Housekeepe...ae217d8700	OpalUDP	Setting interface to 172.20.0.2%eth0
+  0:10.099	Housekeepe...ae217d8700	SIP	Set new interface 172.20.0.2%eth0 for transport udp$125.212.212.45:5060<if=udp$172.20.0.2:5060>
+  0:10.099	Housekeepe...ae217d8700	SIP	PDU is too large (2304 bytes) trying compact form.
+  0:10.099	Housekeepe...ae217d8700	SIP	PDU is likely too large (2254 bytes) for UDP datagram.
+  0:10.099	Housekeepe...ae217d8700	SIP	Sending PDU (2254 bytes) to: rem=udp$125.212.212.45:5060,local=udp$172.20.0.2:5060,if=172.20.0.2%eth0
+INVITE sip:8000@xxx3.antbuddy.com SIP/2.0
+CSeq: 1 INVITE
+v: SIP/2.0/UDP 172.20.0.2:5060;branch=z9hG4bKaa829581-0ff3-e911-9335-0242ac140002;rport
+User-Agent: sipcmd/1.0.1
+f: "root" <sip:agent01@xxx3.antbuddy.com>;tag=70509381-0ff3-e911-9335-0242ac140002
+i: 66559381-0ff3-e911-9335-0242ac140002@61c71e006a9b
+k: 100rel,replaces
+Organization: Command line VoIP testphone
+t: <sip:8000@xxx3.antbuddy.com>
+m: "root" <sip:agent01@xxx3.antbuddy.com@172.20.0.2>
+Allow: INVITE,ACK,OPTIONS,BYE,CANCEL,SUBSCRIBE,NOTIFY,REFER,MESSAGE,INFO,PING,PRACK
+l: 1658
+c: application/sdp
+Max-Forwards: 70
+
+v=0
+o=- 1571731153 1 IN IP4 172.20.0.2
+s=sipcmd/1.0.1
+c=IN IP4 172.20.0.2
+t=0 0
+m=audio 5000 RTP/AVP 9 109 110 125 107 121 8 0 93 94 95 126 3 108 105 106 120 122 101 100
+a=sendrecv
+a=rtpmap:9 G722/8000/1
+a=rtpmap:109 G7221/16000/1
+a=fmtp:109 bitrate=24000
+a=rtpmap:110 G7221/16000/1
+a=fmtp:110 bitrate=32000
+a=rtpmap:125 AMR-WB/16000/1
+a=fmtp:125 octet-align=1
+a=rtpmap:107 SILK/16000/1
+a=rtpmap:121 Speex/16000/1
+a=rtpmap:8 PCMA/8000/1
+a=rtpmap:0 PCMU/8000/1
+a=rtpmap:93 G726-16/8000/1
+a=rtpmap:94 G726-24/8000/1
+a=rtpmap:95 G726-32/8000/1
+a=rtpmap:126 G726-40/8000/1
+a=rtpmap:3 gsm/8000/1
+a=rtpmap:108 AMR/8000/1
+a=rtpmap:105 lpc10/8000/1
+a=rtpmap:106 SILK/8000/1
+a=rtpmap:120 Speex/8000/1
+a=rtpmap:122 iLBC/8000/1
+a=fmtp:122 mode=20
+a=rtpmap:101 telephone-event/8000
+a=fmtp:101 0-16,32,36
+a=rtpmap:100 NSE/8000
+a=fmtp:100 192-193
+a=maxptime:30
+m=video 5002 RTP/AVP 31 34 99 104 103 90 97 91
+b=AS:240000
+b=TIAS:240000000
+a=sendrecv
+a=rtpmap:31 h261/90000
+a=fmtp:31 CIF=1;QCIF=1
+a=rtpmap:34 H263/90000
+a=fmtp:34 F=1;CIF=1;CIF16=1;CIF4=1;maxbr=3276;QCIF=1;SQCIF=1
+a=rtpmap:99 H263-1998/90000
+a=fmtp:99 D=1;F=1;I=1;J=1;CIF=1;CIF4=1;maxbr=3276;QCIF=1;SQCIF=1
+a=rtpmap:104 H264/90000
+a=fmtp:104 max-br=240000;max-fs=6336;max-mbps=380160;profile-level-id=42801e
+a=rtpmap:103 H264/90000
+a=fmtp:103 packetization-mode=1;max-br=240000;max-fs=6336;max-mbps=380160;profile-level-id=42801e
+a=rtpmap:90 MP4V-ES/90000
+a=fmtp:90 profile-level-id=5
+a=rtpmap:97 raw/90000
+a=fmtp:97 rate=90000;height=288;width=352;colorimetry=BT601-5;depth=8;sampling=YCbCr-4:2:0
+a=rtpmap:91 theora/90000
+a=fmtp:91 height=576;width=704
+
+  0:10.100	Housekeepe...ae217d8700	OpalUDP	Setting interface to 
+  0:10.591	                 sipcmd	OpalMan	Clearing all calls and waiting, primary thread.
+  0:10.592	                 sipcmd	Call	Clearing Call[Cf3f8d7a11] reason=EndedByLocalUser
+  0:10.592	                 sipcmd	OpalCon	SetPhase from SetUpPhase to ReleasingPhase for Call[Cf3f8d7a11]-EP<sip>[70509381-0ff3-e911-9335-0242ac140002]
+  0:10.592	                 sipcmd	OpalCon	Call end reason for Call[Cf3f8d7a11]-EP<sip>[70509381-0ff3-e911-9335-0242ac140002] set to EndedByLocalUser
+  0:10.592	                 sipcmd	OpalCon	Releasing asynchronously Call[Cf3f8d7a11]-EP<sip>[70509381-0ff3-e911-9335-0242ac140002]
+  0:10.592	                 sipcmd	PWLib	File handle high water mark set: 29 Thread unblock pipe
+  0:10.592	                 sipcmd	PTLib	Created thread 0x14a8b20 OnRelease
+  0:10.592	                 sipcmd	PTLib	Thread high water mark set: 7
+  0:10.592	OnRelease:...ae21715700	PTLib	Started thread 0x14a8b20 (81) OnRelease:0x7fae21715700
+  0:10.592	OnRelease:...ae21715700	SIP	OnReleased: Call[Cf3f8d7a11]-EP<sip>[70509381-0ff3-e911-9335-0242ac140002]
+  0:10.592	OnRelease:...ae21715700	SIP	Cancelling 1 transactions.
+  0:10.592	OnRelease:...ae21715700	SIP	Attempting to abort INVITE transaction id=z9hG4bKaa829581-0ff3-e911-9335-0242ac140002
+  0:10.592	OnRelease:...ae21715700	SIP	Set state Terminated_Aborted for INVITE transaction id=z9hG4bKaa829581-0ff3-e911-9335-0242ac140002
+  0:10.592	OnRelease:...ae21715700	SIP	Transaction 1 INVITE sip:8000@xxx3.antbuddy.com failed, unknown handler, ID: 66559381-0ff3-e911-9335-0242ac140002@61c71e006a9b
+  0:10.592	OnRelease:...ae21715700	SIP	OnTransactionFailed for transaction id=z9hG4bKaa829581-0ff3-e911-9335-0242ac140002
+  0:10.592	OnRelease:...ae21715700	SIP	Completed state for transaction id=z9hG4bKaa829581-0ff3-e911-9335-0242ac140002
+  0:10.593	OnRelease:...ae21715700	OpalCon	OnReleased Call[Cf3f8d7a11]-EP<sip>[70509381-0ff3-e911-9335-0242ac140002]
+  0:10.593	OnRelease:...ae21715700	OpalCon	Media streams closed.
+  0:10.593	OnRelease:...ae21715700	OpalEP	OnReleased Call[Cf3f8d7a11]-EP<sip>[70509381-0ff3-e911-9335-0242ac140002]
+  0:10.593	OnRelease:...ae21715700	OpalMan	OnReleased Call[Cf3f8d7a11]-EP<sip>[70509381-0ff3-e911-9335-0242ac140002]
+  0:10.593	OnRelease:...ae21715700	Call	OnReleased Call[Cf3f8d7a11]-EP<sip>[70509381-0ff3-e911-9335-0242ac140002]
+  0:10.593	OnRelease:...ae21715700	OpalCon	SetPhase from SetUpPhase to ReleasingPhase for Call[Cf3f8d7a11]-EP<local>[L5a5f0c3a2]
+  0:10.593	OnRelease:...ae21715700	OpalCon	Call end reason for Call[Cf3f8d7a11]-EP<local>[L5a5f0c3a2] set to EndedByLocalUser
+  0:10.593	OnRelease:...ae21715700	OpalCon	Releasing synchronously Call[Cf3f8d7a11]-EP<local>[L5a5f0c3a2]
+  0:10.593	OnRelease:...ae21715700	OpalCon	OnReleased Call[Cf3f8d7a11]-EP<local>[L5a5f0c3a2]
+  0:10.593	OnRelease:...ae21715700	OpalCon	Media streams closed.
+  0:10.593	OnRelease:...ae21715700	OpalEP	OnReleased Call[Cf3f8d7a11]-EP<local>[L5a5f0c3a2]
+  0:10.593	OnRelease:...ae21715700	OpalMan	OnReleased Call[Cf3f8d7a11]-EP<local>[L5a5f0c3a2]
+  0:10.593	OnRelease:...ae21715700	Call	OnReleased Call[Cf3f8d7a11]-EP<local>[L5a5f0c3a2]
+  0:10.593	OnRelease:...ae21715700	OpalCon	SetPhase from ReleasingPhase to ReleasedPhase for Call[Cf3f8d7a11]-EP<local>[L5a5f0c3a2]
+  0:10.593	OnRelease:...ae21715700	OpalCon	Connection Call[Cf3f8d7a11]-EP<local>[L5a5f0c3a2] released
+        Initial Time: Tue, 22 Oct 2019 07:59:13 GMT
+          SetUpPhase: 0.000
+     ProceedingPhase: N/A
+       AlertingPhase: N/A
+      ConnectedPhase: N/A
+    EstablishedPhase: N/A
+     ForwardingPhase: N/A
+      ReleasingPhase: 10.544
+       ReleasedPhase: 10.545
+     Call end reason: EndedByLocalUser
+
+  0:10.593	OnRelease:...ae21715700	OpalCon	SetPhase from ReleasingPhase to ReleasedPhase for Call[Cf3f8d7a11]-EP<sip>[70509381-0ff3-e911-9335-0242ac140002]
+  0:10.593	OnRelease:...ae21715700	OpalCon	Connection Call[Cf3f8d7a11]-EP<sip>[70509381-0ff3-e911-9335-0242ac140002] released
+        Initial Time: Tue, 22 Oct 2019 07:59:13 GMT
+          SetUpPhase: 0.029
+     ProceedingPhase: N/A
+       AlertingPhase: N/A
+      ConnectedPhase: N/A
+    EstablishedPhase: N/A
+     ForwardingPhase: N/A
+      ReleasingPhase: 10.543
+       ReleasedPhase: 10.544
+     Call end reason: EndedByLocalUser
+
+  0:10.593	OnRelease:...ae21715700	OpalCon	OnRelease thread completed for Call[Cf3f8d7a11]-EP<sip>[70509381-0ff3-e911-9335-0242ac140002]
+  0:10.593	OnRelease:...ae21715700	PWLib	File handle high water mark set: 30 PTextFile
+  0:10.594	OnRelease:...ae21715700	PTLib	Thread ended: name="OnRelease:0x7fae21715700", real=0.001, kernel=0.000 (0%), user=0.000 (0%), both=0.000 (0%)
+  0:11.045	Opal Garba...ae2185a700	LocalCon	Deleted connection.
+  0:11.045	Opal Garba...ae2185a700	OpalCon	Connection Call[Cf3f8d7a11]-EP<local>[L5a5f0c3a2] destroyed.
+  0:11.046	Housekeepe...ae217d8700	PTLib	Destroyed thread 0x14a8b20 OnRelease:0x7fae21715700(id = 0)
+  0:11.046	Opal Garba...ae2185a700	PTLib	Destroying read/write mutex 0x14aa4c0
+  0:12.046	Opal Garba...ae2185a700	RTP	Deleting session 1
+  0:12.046	Opal Garba...ae2185a700	RTPEp	Session 1, forgetting local RTP port 5000 on connection Call[Cf3f8d7a11]-EP<sip>[70509381-0ff3-e911-9335-0242ac140002]
+  0:12.046	Opal Garba...ae2185a700	RTP_UDP	Session 1, Shutting down read.
+  0:12.046	Opal Garba...ae2185a700	RTP_UDP	Session 1, shutting down write.
+  0:12.047	Opal Garba...ae2185a700	RTP	Deleting session 2
+  0:12.047	Opal Garba...ae2185a700	RTPEp	Session 2, forgetting local RTP port 5002 on connection Call[Cf3f8d7a11]-EP<sip>[70509381-0ff3-e911-9335-0242ac140002]
+  0:12.047	Opal Garba...ae2185a700	RTP_UDP	Session 2, Shutting down read.
+  0:12.047	Opal Garba...ae2185a700	RTP_UDP	Session 2, shutting down write.
+  0:12.047	Opal Garba...ae2185a700	SIP	Transaction id=z9hG4bKaa829581-0ff3-e911-9335-0242ac140002 destroyed.
+  0:12.048	Opal Garba...ae2185a700	PTLib	Destroying read/write mutex 0x14c12a0
+  0:12.048	Opal Garba...ae2185a700	SIP	Deleting connection.
+  0:12.048	Opal Garba...ae2185a700	SIP	Setting new transport for destination ""
+  0:12.048	Opal Garba...ae2185a700	Opal	Transport clean up on termination
+  0:12.048	Opal Garba...ae2185a700	Opal	Transport Close
+  0:12.048	Opal Garba...ae2185a700	Opal	Transport clean up on termination
+  0:12.049	Opal Garba...ae2185a700	Opal	Transport Close
+  0:12.049	Opal Garba...ae2185a700	PWLib	File handle low water mark set: 24 PUDPSocket
+  0:12.049	Opal Garba...ae2185a700	Opal	Deleted transport udp$125.212.212.45:5060<if=udp$*:5060>
+  0:12.049	Opal Garba...ae2185a700	PTLib	Destroying read/write mutex 0x14b4a90
+  0:12.049	Opal Garba...ae2185a700	OpalCon	Connection Call[Cf3f8d7a11]-EP<sip>[70509381-0ff3-e911-9335-0242ac140002] destroyed.
+  0:12.050	Opal Garba...ae2185a700	PTLib	Destroying read/write mutex 0x14b0430
+  0:13.050	Opal Garba...ae2185a700	Call	Destroyed Call[Cf3f8d7a11]
+  0:13.050	Opal Garba...ae2185a700	PTLib	Destroying read/write mutex 0x14aa0a0
+  0:13.050	                 sipcmd	OpalMan	All calls cleared.
+  0:13.050	                 sipcmd	OpalMan	Shutting down endpoints.
+  0:13.050	                 sipcmd	OpalMan	Clearing all calls and waiting, primary thread.
+  0:14.050	                 sipcmd	OpalMan	All calls cleared.
+  0:14.050	                 sipcmd	SIP	Shutting down.
+  0:14.051	                 sipcmd	SIP	Changing REGISTER handler from Subscribed to Unsubscribing, target=sip:agent01@xxx3.antbuddy.com, id=6cb99281-0ff3-e911-9335-0242ac140002@61c71e006a9b
+  0:14.051	                 sipcmd	PTLib	Created read/write mutex 0x14c36e0
+  0:14.051	                 sipcmd	SIP	Transaction created.
+  0:14.052	                 sipcmd	HTTP	Adding authentication information
+  0:14.052	                 sipcmd	SIP	Transaction remembering interface "172.20.0.2%eth0"
+  0:14.052	                 sipcmd	SIP	No SRV lookup as has explicit port number.
+  0:14.052	                 sipcmd	SIP	Transaction remote address is udp$125.212.212.45:5060
+  0:14.053	                 sipcmd	SIP	Sending PDU (849 bytes) to: rem=udp$125.212.212.45:5060,local=udp$172.20.0.2:5060,if=172.20.0.2%eth0
+REGISTER sip:xxx3.antbuddy.com SIP/2.0
+Route: <sip:125.212.212.45:5060;lr>
+CSeq: 5 REGISTER
+Via: SIP/2.0/UDP 172.20.0.2:5060;branch=z9hG4bKc0efeb89-0ff3-e911-9335-0242ac140002;rport
+User-Agent: sipcmd/1.0.1
+Authorization: Digest username="agent01", realm="xxx3.antbuddy.com", nonce="Xa63/V2uttGowQbJHpqpJ/e62OmrVZYH", uri="sip:xxx3.antbuddy.com", algorithm=MD5, response="b907e93770279f77f137eb91ede94dfb"
+From: <sip:agent01@xxx3.antbuddy.com>;tag=7cc29281-0ff3-e911-9335-0242ac140002
+Call-ID: 6cb99281-0ff3-e911-9335-0242ac140002@61c71e006a9b
+Organization: Command line VoIP testphone
+To: <sip:agent01@xxx3.antbuddy.com>
+Contact: <sip:agent01@113.161.67.92:11981>;q=1;received=sip:113.161.67.92:11981
+Allow: INVITE,ACK,OPTIONS,BYE,CANCEL,SUBSCRIBE,NOTIFY,REFER,MESSAGE,INFO,PING,PRACK
+Expires: 0
+Content-Length: 0
+Max-Forwards: 70
+
+
+  0:14.053	                 sipcmd	OpalUDP	Setting interface to 172.20.0.2%eth0
+  0:14.053	                 sipcmd	SIP	Transaction timers set: retry=10.000, completion=16.000
+  0:14.065	Opal Liste...ae21797700	PTLib	Created read/write mutex 0x7fadf00094b0
+  0:14.065	Opal Liste...ae21797700	OpalUDP	Binding to interface: 172.20.0.2:5060
+  0:14.065	Opal Liste...ae21797700	PTLib	Created read/write mutex 0x7fadf0006c30
+  0:14.065	Opal Liste...ae21797700	SIP	Waiting for PDU on udp$125.212.212.45:5060<if=udp$172.20.0.2:5060>
+  0:14.065	Opal Liste...ae21797700	SIP	PDU received: rem=udp$125.212.212.45:5060,local=udp$172.20.0.2:5060,if=172.20.0.2%eth0
+SIP/2.0 200 OK
+CSeq: 5 REGISTER
+Via: SIP/2.0/UDP 172.20.0.2:5060;branch=z9hG4bKc0efeb89-0ff3-e911-9335-0242ac140002;rport=11981;received=113.161.67.92
+From: <sip:agent01@xxx3.antbuddy.com>;tag=7cc29281-0ff3-e911-9335-0242ac140002
+Call-ID: 6cb99281-0ff3-e911-9335-0242ac140002@61c71e006a9b
+To: <sip:agent01@xxx3.antbuddy.com>;tag=1700698b7171530b389f27beb360ed9b.f7e5
+Content-Length: 0
+
+
+  0:14.066	Opal Liste...ae21797700	SIP	Queueing PDU "5 REGISTER <200>", transaction=z9hG4bKc0efeb89-0ff3-e911-9335-0242ac140002, token=6cb99281-0ff3-e911-9335-0242ac140002@61c71e006a9b
+  0:14.066	Opal Liste...ae21797700	Opal	Transport clean up on termination
+  0:14.066	Opal Liste...ae21797700	Opal	Transport Close
+  0:14.066	    Pool:0x7fae21756700	SIP	Handling PDU "5 REGISTER <200>" for transaction=z9hG4bKc0efeb89-0ff3-e911-9335-0242ac140002
+  0:14.066	    Pool:0x7fae21756700	SIP	REGISTER transaction id=z9hG4bKc0efeb89-0ff3-e911-9335-0242ac140002 completing.
+  0:14.066	    Pool:0x7fae21756700	SIP	Finalising handlers interface "172.20.0.2%eth0"
+  0:14.066	    Pool:0x7fae21756700	OpalUDP	Setting interface to 172.20.0.2%eth0
+  0:14.066	    Pool:0x7fae21756700	SIP	Changing REGISTER handler from Unsubscribing to Unsubscribed, target=sip:agent01@xxx3.antbuddy.com, id=6cb99281-0ff3-e911-9335-0242ac140002@61c71e006a9b
+  0:14.066	Opal Liste...ae21797700	Opal	Deleted transport udp$125.212.212.45:5060<if=udp$172.20.0.2:5060>
+  0:14.066	Opal Liste...ae21797700	PTLib	Destroying read/write mutex 0x7fadf00094b0
+  0:14.066	    Pool:0x7fae21756700	SIP	REGISTER transaction id=z9hG4bKc0efeb89-0ff3-e911-9335-0242ac140002 completed.
+  0:14.066	    Pool:0x7fae21756700	SIP	Handled PDU "5 REGISTER <200>"
+  0:14.066	    Pool:0x7fae21756700	PTLib	Destroying read/write mutex 0x7fadf0006c30
+  0:15.051	Opal Garba...ae2185a700	Opal	Transport clean up on termination
+  0:15.051	Opal Garba...ae2185a700	Opal	Transport Close
+  0:15.051	Opal Garba...ae2185a700	Opal	Transport clean up on termination
+  0:15.051	Opal Garba...ae2185a700	Opal	Transport Close
+  0:15.051	Opal Garba...ae2185a700	Opal	Deleted transport udp$125.212.212.45:5060<if=udp$172.20.0.2:5060>
+  0:15.051	Opal Garba...ae2185a700	PTLib	Destroying read/write mutex 0x14a4750
+  0:15.051	Opal Garba...ae2185a700	SIP	Destroyed REGISTER handler for sip:agent01@xxx3.antbuddy.com
+  0:15.051	Opal Garba...ae2185a700	PTLib	Destroying read/write mutex 0x14a2850
+  0:19.066	Housekeepe...ae217d8700	SIP	Set state Terminated_Success for REGISTER transaction id=z9hG4bKc0efeb89-0ff3-e911-9335-0242ac140002
+  0:19.066	Housekeepe...ae217d8700	SIP	Completed state for transaction id=z9hG4bKc0efeb89-0ff3-e911-9335-0242ac140002
+  0:19.161	                 sipcmd	OpalEP	sip endpoint shutting down.
+  0:19.161	                 sipcmd	Listen	Stopping listening thread on udp$*:5060
+  0:19.162	                 sipcmd	MonSock	Closed UDP socket 0x14a2260
+  0:19.162	Opal Liste...ae21797700	Listen	UDP read error.
+  0:19.162	Opal Liste...ae21797700	PWLib	File handle low water mark set: 19 PTextFile
+  0:19.162	Opal Liste...ae21797700	PTLib	Thread ended: name="Opal Listener:0x7fae21797700", real=19.118, kernel=0.000 (0%), user=0.000 (0%), both=0.000 (0%)
+  0:19.182	                 sipcmd	MonSock	Deleting UDP socket 0x14a2260
+  0:19.182	                 sipcmd	PTLib	Destroyed thread 0x14a0b90 Opal Listener:0x7fae21797700(id = 7fae21797700)
+  0:19.182	                 sipcmd	PTLib	Destroying read/write mutex 0x14a1cb0
+  0:19.182	                 sipcmd	OpalEP	local endpoint shutting down.
+  0:19.182	                 sipcmd	PTLib	Destroying read/write mutex 0x149b328
+  0:19.182	                 sipcmd	IfaceMon	Awaiting thread termination
+  0:19.182	Network In...ae21819700	IfaceMon	Finished interface monitor thread.
+  0:19.182	Network In...ae21819700	PWLib	File handle low water mark set: 18 PTextFile
+  0:19.182	Network In...ae21819700	PTLib	Thread ended: name="Network Interface Monitor:0x7fae21819700", real=19.139, kernel=0.000 (0%), user=0.000 (0%), both=0.000 (0%)
+  0:19.192	                 sipcmd	PTLib	Destroyed thread 0x149b6c0 Network Interface Monitor:0x7fae21819700(id = 7fae21819700)
+  0:19.192	                 sipcmd	PTLib	Destroying read/write mutex 0x149b0a8
+  0:19.192	    Pool:0x7fae21756700	PWLib	File handle low water mark set: 9 PTextFile
+  0:19.192	    Pool:0x7fae21756700	PTLib	Thread ended: name="Pool:0x7fae21756700", real=19.134, kernel=0.000 (0%), user=0.000 (0%), both=0.000 (0%)
+  0:19.202	                 sipcmd	ThreadPool	Destroying pool thread
+  0:19.203	                 sipcmd	PTLib	Destroyed thread 0x7fadf0004610 Pool:0x7fae21756700(id = 7fae21756700)
+  0:19.203	                 sipcmd	SIP	Transaction id=z9hG4bKc0efeb89-0ff3-e911-9335-0242ac140002 destroyed.
+  0:19.203	                 sipcmd	PTLib	Destroying read/write mutex 0x14c36e0
+  0:19.203	                 sipcmd	OpalEP	sip endpoint destroyed.
+  0:19.203	                 sipcmd	LocalEP	Deleted endpoint.
+  0:19.203	                 sipcmd	OpalEP	local endpoint destroyed.
+  0:19.203	Opal Garba...ae2185a700	PTLib	Thread ended: name="Opal Garbage:0x7fae2185a700", real=19.161, kernel=0.000 (0%), user=0.000 (0%), both=0.000 (0%)
+  0:19.213	                 sipcmd	PTLib	Destroyed thread 0x1498150 Opal Garbage:0x7fae2185a700(id = 7fae2185a700)
+  0:19.213	                 sipcmd	OpalMan	Deleted manager.
+  0:19.214	                 sipcmd	PTLib	Destroying read/write mutex 0x1492cf8
+  0:19.214	                 sipcmd	OpalPlugin	Using default handler for plugin codec h263_ffmpeg_ptplugin
+  0:19.214	                 sipcmd	OpalPlugin	Using default handler for plugin codec h261_vic_ptplugin
+  0:19.214	                 sipcmd	OpalPlugin	Using default handler for plugin codec mpeg4_ffmpeg_ptplugin
+  0:19.214	                 sipcmd	OpalPlugin	Using default handler for plugin codec theora_ptplugin
+  0:19.214	                 sipcmd	OpalPlugin	Using default handler for plugin codec h264_x264_ptplugin
+  0:19.214	                 sipcmd	OpalPlugin	Using default handler for plugin codec g722_ptplugin
+  0:19.214	                 sipcmd	OpalPlugin	Using default handler for plugin codec lpc10_ptplugin
+  0:19.214	                 sipcmd	OpalPlugin	Using default handler for plugin codec silk_ptplugin
+  0:19.214	                 sipcmd	OpalPlugin	Using default handler for plugin codec ima_adpcm_ptplugin
+  0:19.214	                 sipcmd	OpalPlugin	Using default handler for plugin codec gsmamrcodec_ptplugin
+  0:19.214	                 sipcmd	OpalPlugin	Using default handler for plugin codec g7221_ptplugin
+  0:19.214	                 sipcmd	OpalPlugin	Using default handler for plugin codec speex_ptplugin
+  0:19.214	                 sipcmd	OpalPlugin	Using default handler for plugin codec iLBC_ptplugin
+  0:19.214	                 sipcmd	OpalPlugin	Using default handler for plugin codec g7222_ptplugin
+  0:19.214	                 sipcmd	OpalPlugin	Using default handler for plugin codec g726_ptplugin
+  0:19.214	                 sipcmd	OpalPlugin	Using default handler for plugin codec gsm0610_ptplugin
+  0:19.214	                 sipcmd	OpalPlugin	Using default handler for plugin codec spandsp_ptplugin
+  0:19.214	                 sipcmd	UDLL	Closing /usr/lib/opal-3.10.10/fax/spandsp_ptplugin.so
+  0:19.214	                 sipcmd	UDLL	Closing /usr/lib/opal-3.10.10/codecs/audio/gsm0610_ptplugin.so
+  0:19.214	                 sipcmd	UDLL	Closing /usr/lib/opal-3.10.10/codecs/audio/g726_ptplugin.so
+  0:19.215	                 sipcmd	UDLL	Closing /usr/lib/opal-3.10.10/codecs/audio/g7222_ptplugin.so
+  0:19.215	                 sipcmd	UDLL	Closing /usr/lib/opal-3.10.10/codecs/audio/iLBC_ptplugin.so
+  0:19.215	                 sipcmd	UDLL	Closing /usr/lib/opal-3.10.10/codecs/audio/speex_ptplugin.so
+  0:19.215	                 sipcmd	UDLL	Closing /usr/lib/opal-3.10.10/codecs/audio/g7221_ptplugin.so
+  0:19.215	                 sipcmd	UDLL	Closing /usr/lib/opal-3.10.10/codecs/audio/gsmamrcodec_ptplugin.so
+  0:19.215	                 sipcmd	UDLL	Closing /usr/lib/opal-3.10.10/codecs/audio/ima_adpcm_ptplugin.so
+  0:19.215	                 sipcmd	UDLL	Closing /usr/lib/opal-3.10.10/codecs/audio/silk_ptplugin.so
+  0:19.215	                 sipcmd	UDLL	Closing /usr/lib/opal-3.10.10/codecs/audio/lpc10_ptplugin.so
+  0:19.215	                 sipcmd	UDLL	Closing /usr/lib/opal-3.10.10/codecs/audio/g722_ptplugin.so
+  0:19.215	                 sipcmd	UDLL	Closing /usr/lib/opal-3.10.10/codecs/video/h264_x264_ptplugin.so
+  0:19.215	                 sipcmd	UDLL	Closing /usr/lib/opal-3.10.10/codecs/video/theora_ptplugin.so
+  0:19.215	                 sipcmd	UDLL	Closing /usr/lib/opal-3.10.10/codecs/video/mpeg4_ffmpeg_ptplugin.so
+  0:19.215	                 sipcmd	UDLL	Closing /usr/lib/opal-3.10.10/codecs/video/h261_vic_ptplugin.so
+  0:19.215	                 sipcmd	UDLL	Closing /usr/lib/opal-3.10.10/codecs/video/h263_ffmpeg_ptplugin.so
+  0:19.215	                 sipcmd	UDLL	Closing /usr/lib/ptlib-2.10.10/devices/sound/oss_pwplugin.so
+  0:19.215	                 sipcmd	UDLL	Closing /usr/lib/ptlib-2.10.10/devices/sound/alsa_pwplugin.so
+  0:19.215	                 sipcmd	UDLL	Closing /usr/lib/ptlib-2.10.10/devices/sound/pulse_pwplugin.so
+  0:19.215	                 sipcmd	UDLL	Closing /usr/lib/ptlib-2.10.10/devices/videoinput/v4l2_pwplugin.so
+  0:24.053	Housekeepe...ae217d8700	Housekeeping thread ended
+  0:24.053	Housekeepe...ae217d8700	PWLib	File handle low water mark set: 6 PTextFile
+  0:24.053	Housekeepe...ae217d8700	PTLib	Thread ended: name="Housekeeper:0x7fae217d8700", real=24.010, kernel=0.000 (0%), user=0.000 (0%), both=0.000 (0%)
+  0:24.061	                 sipcmd	PTLib	Destroyed thread 0x149bb00 Housekeeper:0x7fae217d8700(id = 7fae217d8700)
+  0:24.061	                 sipcmd	PTLib	Destroyed PXConfig 0x14bffa0

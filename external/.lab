@@ -1,0 +1,4 @@
+export CALLREALM="xxx3.antbuddy.com"
+export CALLUSER="agent01"
+export CALLPW="111111"
+export CALLPROXY="125.212.212.45"
